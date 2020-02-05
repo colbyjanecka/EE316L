@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jan 29 12:50:28 2020
+# Process ID: 23582
+# Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.sim/sim_1/behav/xsim.dir/tb_gate_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.sim/sim_1/behav/webtalk.log
+# Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.sim/sim_1/behav/xsim.dir/tb_gate_behav/webtalk/xsim_webtalk.tcl -notrace

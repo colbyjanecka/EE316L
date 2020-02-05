@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jan 29 12:52:40 2020
+# Process ID: 27571
+# Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.runs/impl_1
+# Command line: vivado -log gate.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source gate.tcl -notrace
+# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.runs/impl_1/gate.vdi
+# Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab1/Lab1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source gate.tcl -notrace
