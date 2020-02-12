@@ -4,6 +4,8 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -19,6 +21,9 @@ read_verilog -library xil_defaultlib /home/ecelrc/students/cjanecka/EE316L/Lab2/
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.srcs/constrs_1/imports/files/decoder_constrs.xdc
+set_property used_in_implementation false [get_files /home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.srcs/constrs_1/imports/files/decoder_constrs.xdc]
+
 
 synth_design -top decoder -part xc7a35tcpg236-1
 

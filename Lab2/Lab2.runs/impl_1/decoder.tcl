@@ -44,6 +44,8 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -56,6 +58,7 @@ set rc [catch {
   set_property ip_output_repo /home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet /home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.runs/synth_1/decoder.dcp
+  read_xdc /home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.srcs/constrs_1/imports/files/decoder_constrs.xdc
   link_design -top decoder -part xc7a35tcpg236-1
   write_hwdef -file decoder.hwdef
   close_msg_db -file init_design.pb
