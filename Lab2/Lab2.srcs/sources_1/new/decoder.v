@@ -34,6 +34,11 @@ output combo0, combo1, combo2, combo3, combo4, combo5, combo6, combo7
 assign combo0 = (~up) & (~left) & (~right) & (enable);
 assign combo1 = (~up) & (~left) & (right) & (enable);
 assign combo2 = (~up) & (left) & (~right) & (enable);
+assign combo3 = (~up) & (left) & (right) & (enable);
+assign combo4 = (up) & (~left) & (~right) & (enable);
+assign combo5 = (up) & (~left) & (right) & (enable);
+assign combo6 = (up) & (left) & (~right) & (enable);
+assign combo7 = (up) & (left) & (right) & (enable);
 
 // Behavioral    
     

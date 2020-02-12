@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date             : Wed Feb 12 12:26:47 2020
+| Date             : Wed Feb 12 15:25:16 2020
 | Host             : bowser.ece.utexas.edu running 64-bit CentOS Linux release 7.7.1908 (Core)
 | Command          : report_power -file decoder_power_routed.rpt -pb decoder_power_summary_routed.pb -rpx decoder_power_routed.rpx
 | Design           : decoder
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.020 |
-| Dynamic (W)              | 0.947 |
-| Device Static (W)        | 0.074 |
+| Total On-Chip Power (W)  | 2.556 |
+| Dynamic (W)              | 2.477 |
+| Device Static (W)        | 0.078 |
 | Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 79.9  |
-| Junction Temperature (C) | 30.1  |
+| Max Ambient (C)          | 72.2  |
+| Junction Temperature (C) | 37.8  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,13 +49,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.008 |        5 |       --- |             --- |
-|   LUT as Logic |     0.008 |        2 |     20800 |           <0.01 |
-|   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.018 |        7 |       --- |             --- |
-| I/O            |     0.921 |       12 |       106 |           11.32 |
-| Static Power   |     0.074 |          |           |                 |
-| Total          |     1.020 |          |           |                 |
+| Slice Logic    |     0.020 |        8 |       --- |             --- |
+|   LUT as Logic |     0.020 |        4 |     20800 |            0.02 |
+| Signals        |     0.029 |       12 |       --- |             --- |
+| I/O            |     2.428 |       12 |       106 |           11.32 |
+| Static Power   |     0.078 |          |           |                 |
+| Total          |     2.556 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -65,9 +64,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.053 |       0.042 |      0.011 |
-| Vccaux    |       1.800 |     0.046 |       0.033 |      0.013 |
-| Vcco33    |       3.300 |     0.257 |       0.256 |      0.001 |
+| Vccint    |       1.000 |     0.080 |       0.065 |      0.015 |
+| Vccaux    |       1.800 |     0.102 |       0.088 |      0.013 |
+| Vcco33    |       3.300 |     0.684 |       0.683 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -84,17 +83,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| User Input Data             | Confidence | Details                                                | Action                                                                                                   |
-+-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| Design implementation state | High       | Design is routed                                       |                                                                                                          |
-| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                          |
-| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view |
-| Internal nodes activity     | High       | User specified more than 25% of internal nodes         |                                                                                                          |
-| Device models               | High       | Device models are Production                           |                                                                                                          |
-|                             |            |                                                        |                                                                                                          |
-| Overall confidence level    | Low        |                                                        |                                                                                                          |
-+-----------------------------+------------+--------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -132,7 +131,7 @@ Table of Contents
 +---------+-----------+
 | Name    | Power (W) |
 +---------+-----------+
-| decoder |     0.947 |
+| decoder |     2.477 |
 +---------+-----------+
 
 
