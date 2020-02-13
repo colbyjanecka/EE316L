@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Feb 13 16:16:51 2020
-# Process ID: 22688
+# Start of session at: Thu Feb 13 16:40:12 2020
+# Process ID: 1991
 # Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.runs/impl_1
 # Command line: vivado -log decoder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source decoder.tcl -notrace
 # Log file: /home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.runs/impl_1/decoder.vdi
