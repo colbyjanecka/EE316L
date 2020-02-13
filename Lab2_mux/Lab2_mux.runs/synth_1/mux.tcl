@@ -13,6 +13,7 @@ set_property webtalk.parent_dir /home/ecelrc/students/cjanecka/EE316L/Lab2_mux/L
 set_property parent.project_path /home/ecelrc/students/cjanecka/EE316L/Lab2_mux/Lab2_mux.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_output_repo /home/ecelrc/students/cjanecka/EE316L/Lab2_mux/Lab2_mux.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib /home/ecelrc/students/cjanecka/EE316L/Lab2_mux/Lab2_mux.srcs/sources_1/new/mux.v
 foreach dcp [get_files -quiet -all *.dcp] {

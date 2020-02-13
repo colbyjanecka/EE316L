@@ -32,10 +32,25 @@ module mux(
     
     // Dataflow
 
-        assign out = s1 ? (s0 ? down : right) : (s0 ? left : up); 
+//    assign out = s1 ? (s0 ? down : right) : (s0 ? left : up); 
+    
     
     // Behavioral
     
+    reg out_buf = 0;
+    assign out = out_buf;
+    
+    
+    always @ (up or left or down or right or s0 or s1) 
+    begin
+        case ({s0, s1})
+            2'b00: out_buf <= up;
+            2'b01: out_buf <= left;
+            2'b10: out_buf <= right;
+            2'b11: out_buf <= down;
+        endcase
+    end
+
 
         
     
