@@ -6,4 +6,4 @@
 # Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log decoder.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source decoder.tcl -notrace
+vivado -log mux.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source mux.tcl -notrace

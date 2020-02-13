@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/ecelrc/students/cjanecka/EE316L/Lab2/Lab2.runs/synth_1'
+HD_PWD='/home/ecelrc/students/cjanecka/EE316L/Lab2_mux/Lab2_mux.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log decoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder.tcl
+EAStep vivado -log mux.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux.tcl
