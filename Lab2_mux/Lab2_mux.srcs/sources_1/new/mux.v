@@ -41,9 +41,9 @@ module mux(
     assign out = out_buf;
     
     
-    always @ (up or left or down or right or s0 or s1) 
+    always @ (up or left or right or down or s0 or s1) 
     begin
-        case ({s0, s1})
+        case ({s1, s0})
             2'b00: out_buf <= up;
             2'b01: out_buf <= left;
             2'b10: out_buf <= right;
