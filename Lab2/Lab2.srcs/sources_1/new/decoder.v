@@ -65,7 +65,7 @@ module decoder(
            combo6 = combo6_buf, combo7 = combo7_buf;
            
 //     always @( * )  
-     always @(up or left or right or enable)
+     always @(up, left, right, enable)
         begin
             combo0_buf = 0;
             combo1_buf = 0;
@@ -80,12 +80,12 @@ module decoder(
                 case ( {up, left, right } ) 
                     3'b000: combo0_buf=1'b1;
                     3'b001: combo1_buf=1'b1;
-                    3'b010: combo0_buf=2'b1;
-                    3'b011: combo0_buf=3'b1;
-                    3'b100: combo0_buf=4'b1;
-                    3'b101: combo1_buf=5'b1;
-                    3'b110: combo0_buf=6'b1;
-                    3'b111: combo0_buf=7'b1;
+                    3'b010: combo2_buf=1'b1;
+                    3'b011: combo3_buf=1'b1;
+                    3'b100: combo4_buf=1'b1;
+                    3'b101: combo5_buf=1'b1;
+                    3'b110: combo6_buf=1'b1;
+                    3'b111: combo7_buf=1'b1;
                     default: begin
                     combo0_buf = 0;
                     combo1_buf = 0;
