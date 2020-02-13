@@ -20,13 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module decoder(
-
-    input up, left, right, enable,
-    output combo0, combo1, combo2, combo3, combo4, combo5, combo6, combo7
-//    output [0:7] combo
+module decoder( up, left, right, enable, 
+    combo0, combo1, combo2, combo3, combo4, combo5, combo6, combo7
 
     );
+    
+      input up, left, right, enable;
+      output combo0, combo1, combo2, combo3, combo4, combo5, combo6, combo7;
+//    output [0:7] combo
+
     
     // Structural
     
@@ -55,6 +57,8 @@ module decoder(
 //    assign combo6 = (up) & (left) & (~right) & (enable);
 //    assign combo7 = (up) & (left) & (right) & (enable);
     
-    // Behavioral    
+    // Behavioral
+    
+        
     
 endmodule
