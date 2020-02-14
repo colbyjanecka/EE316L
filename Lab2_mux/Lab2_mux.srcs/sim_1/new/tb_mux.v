@@ -45,7 +45,7 @@ wire out;
     up=0; left=0; right=0; down= 0; s0=1; s1=1;     // down selected, not pressed       
     #10                        
     up=0; left=0; right=0; down= 1; s0=1; s1=1;     // down selected, pressed       
-    #10                       
+    #10;                       
     end
 
 

@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Feb 13 17:54:09 2020
-# Process ID: 5813
+# Start of session at: Thu Feb 13 18:04:53 2020
+# Process ID: 18225
 # Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab2_mux/Lab2_mux.runs/synth_1
 # Command line: vivado -log mux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux.tcl
 # Log file: /home/ecelrc/students/cjanecka/EE316L/Lab2_mux/Lab2_mux.runs/synth_1/mux.vds
