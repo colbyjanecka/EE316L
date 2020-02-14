@@ -32,13 +32,13 @@ module mux(
     wire s0not, s1not; //s0 not, s1 not
     wire upwire, leftwire, rightwire, downwire;
   
-    not g1(s0not,s0);
-    not g2(s1npt,s1);
+    not g1(s0not, s0);
+    not g2(s1not, s1);
   
-    and g3(upwire,c0,s1not,s0not);
-    and g4(leftwire,c1,s1not,s0);
-    and g5(rightwire,c2,s1,s0not);
-    and g6(downwire,c3,s1,s0);
+    and g3(upwire, up, s1not, s0not);
+    and g4(leftwire, left, s1not, s0);
+    and g5(rightwire, right, s1,s0not);
+    and g6(downwire, down, s1,s0);
   
     or g7(out, upwire, leftwire, rightwire, downwire);
     
