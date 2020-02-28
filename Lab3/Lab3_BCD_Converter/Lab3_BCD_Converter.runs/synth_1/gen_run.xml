@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582923866">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1582924667">
   <File Type="VDS-TIMING-PB" Name="bcd_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="bcd_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="bcd.dcp"/>

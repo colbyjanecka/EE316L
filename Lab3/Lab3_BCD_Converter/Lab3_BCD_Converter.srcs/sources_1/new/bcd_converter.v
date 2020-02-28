@@ -35,52 +35,66 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
 
     // Dataflow
 
-    assign seg[0] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) | 
-                    (~sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
-                    (sw[3] & sw[2] & ~sw[1] & sw[0]) |
-                    (sw[3] & ~sw[2] & sw[1] & sw[0]);
+//    assign seg[0] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) | 
+//                    (~sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
+//                    (sw[3] & sw[2] & ~sw[1] & sw[0]) |
+//                    (sw[3] & ~sw[2] & sw[1] & sw[0]);
                     
-    assign seg[1] = (~sw[3] & sw[2] & ~sw[1] & sw[0]) | 
-                    (sw[2] & sw[1] & ~sw[0]) |
-                    (sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
-                    (sw[3] & sw[1] & sw[0]);
+//    assign seg[1] = (~sw[3] & sw[2] & ~sw[1] & sw[0]) | 
+//                    (sw[2] & sw[1] & ~sw[0]) |
+//                    (sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
+//                    (sw[3] & sw[1] & sw[0]);
                     
-    assign seg[2] = (~sw[3] & ~sw[2] & sw[1] & ~sw[0]) | 
-                    (sw[3] & sw[2] & sw[1]) |
-                    (sw[3] & sw[2] & ~sw[0]);
+//    assign seg[2] = (~sw[3] & ~sw[2] & sw[1] & ~sw[0]) | 
+//                    (sw[3] & sw[2] & sw[1]) |
+//                    (sw[3] & sw[2] & ~sw[0]);
                     
-    assign seg[3] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) | 
-                    (~sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
-                    (sw[2] & sw[1] & sw[0]) |
-                    (sw[3] & ~sw[2] & sw[1] & ~sw[0]);
+//    assign seg[3] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) | 
+//                    (~sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
+//                    (sw[2] & sw[1] & sw[0]) |
+//                    (sw[3] & ~sw[2] & sw[1] & ~sw[0]);
                     
-    assign seg[4] = (~sw[3] & sw[0]) | (~sw[3] & sw[2] & ~sw[1])
-                    |(sw[0] & ~sw[1] & ~sw[2]);
+//    assign seg[4] = (~sw[3] & sw[0]) | (~sw[3] & sw[2] & ~sw[1])
+//                    |(sw[0] & ~sw[1] & ~sw[2]);
                     
-    assign seg[5] = (~sw[3] & ~sw[2] & sw[0]) | 
-                    (~sw[3] & ~sw[2] & sw[1]) |
-                    (~sw[3] & sw[1] & sw[0]) |
-                    (sw[3] & sw[2] & ~sw[1] & sw[0]); 
+//    assign seg[5] = (~sw[3] & ~sw[2] & sw[0]) | 
+//                    (~sw[3] & ~sw[2] & sw[1]) |
+//                    (~sw[3] & sw[1] & sw[0]) |
+//                    (sw[3] & sw[2] & ~sw[1] & sw[0]); 
                     
-    assign seg[6] = (~sw[3] & ~sw[2] & ~sw[1]) | 
-                    (~sw[3] & sw[2] & sw[1] & sw[0]) |
-                    (sw[3] & sw[2] & ~sw[1] & ~sw[0]);                
+//    assign seg[6] = (~sw[3] & ~sw[2] & ~sw[1]) | 
+//                    (~sw[3] & sw[2] & sw[1] & sw[0]) |
+//                    (sw[3] & sw[2] & ~sw[1] & ~sw[0]);                
 
     // Behavioral
 
-//    reg out_buf = 0;
-//    assign out = out_buf;
+    reg seg_buf = 0;
+    assign seg = seg_buf;
 
 
-//    always @ (up or left or right or down or s0 or s1)
-//    begin
-//        case ({s1, s0})
-//            2'b00: out_buf <= up;
-//            2'b01: out_buf <= left;
-//            2'b10: out_buf <= right;
-//            2'b11: out_buf <= down;
-//        endcase
-//    end
+    always @(*)
+    begin
+        case(sw)
+        4'b0000: seg_buf = 7'b0000001;
+        4'b0001: seg_buf = 7'b1001111;
+        4'b0010: seg_buf = 7'b0010010;
+        4'b0011: seg_buf = 7'b0000110;
+        4'b0100: seg_buf = 7'b1001100;
+        4'b0101: seg_buf = 7'b0100100;
+        4'b0110: seg_buf = 7'b0100000;
+        4'b0111: seg_buf = 7'b0001111;
+        4'b1000: seg_buf = 7'b0000000;
+        4'b1001: seg_buf = 7'b0000100;
+        4'b1010: seg_buf = 7'b0001000;
+        4'b1011: seg_buf = 7'b1100000;
+        4'b1100: seg_buf = 7'b0110001;
+        4'b1101: seg_buf = 7'b1000010;
+        4'b1110: seg_buf = 7'b0110000;
+        4'b1111: seg_buf = 7'b0111000;
+    
+
+        endcase
+    end
 
 
 
