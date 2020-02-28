@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Fri Feb 28 13:58:31 2020
+| Date         : Fri Feb 28 14:05:25 2020
 | Host         : kamek running 64-bit CentOS release 6.10 (Final)
 | Command      : report_drc -file bcd_drc_routed.rpt -pb bcd_drc_routed.pb -rpx bcd_drc_routed.rpx
 | Design       : bcd

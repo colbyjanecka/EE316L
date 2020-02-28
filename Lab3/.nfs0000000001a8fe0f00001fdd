@@ -1253,3 +1253,153 @@ selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, l
 // TclEventType: RUN_COMPLETED
 // WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 4000 ms.
 // ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 71 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// Elapsed time: 195 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 229, 209); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 232, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 156, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 205, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 289, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 338, 223); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 402, 222); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 157, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 219, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 300, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 354, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 351, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 152, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 224, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 289, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 357, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 415, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 209, 203); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 134, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 159, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,098 MB. GUI used memory: 52 MB. Current time: 2/28/20 2:02:50 PM CST
+selectCodeEditor("bcd_converter.v", 205, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 229, 168); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 168, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 280); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("bcd_converter.v", 141, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 4, 326); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 187, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 297); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 170, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 143, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ai:r)
+// bt:g (cd:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// f:q (cd:JFrame): Launch Runs: addNotify
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("OptionPane.button", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cn' command handler elapsed time: 14 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Feb 28 14:04:02 2020] Launched synth_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log [Fri Feb 28 14:04:02 2020] Launched impl_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 102 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bt:g (cd:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 5,169 MB (+8707kb) [02:06:29]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,248 MB. GUI used memory: 78 MB. Current time: 2/28/20 2:05:50 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 5,434 MB (+6926kb) [02:06:33]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.4 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/.Xil/Vivado-17921-kamek/dcp/bcd.xdc] Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/.Xil/Vivado-17921-kamek/dcp/bcd.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6261.254 ; gain = 0.000 ; free physical = 87078 ; free virtual = 91694 
+// Tcl Message: Restored from archive | CPU: 0.020000 secs | Memory: 0.017906 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6261.254 ; gain = 0.000 ; free physical = 87078 ; free virtual = 91694 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,436 MB. GUI used memory: 76 MB. Current time: 2/28/20 2:06:17 PM CST
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 6451.316 ; gain = 338.133 ; free physical = 86900 ; free virtual = 91515 
+// ExpRunCommands.openImplResults elapsed time: 37.1s
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.0
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// RouteApi::initDelayMediator elapsed time: 10.4s
+// 'dH' command handler elapsed time: 62 seconds
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// HMemoryUtils.trashcanNow. Engine heap size: 5,699 MB. GUI used memory: 80 MB. Current time: 2/28/20 2:06:46 PM CST
+// Elapsed time: 62 seconds
+dismissDialog("Open Implemented Design"); // bt:g (cd:JFrame)

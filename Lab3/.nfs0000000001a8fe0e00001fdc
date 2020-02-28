@@ -273,3 +273,28 @@ launch_runs impl_1 -to_step write_bitstream -jobs 12
 Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log
 [Fri Feb 28 13:57:06 2020] Launched impl_1...
 Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Feb 28 14:04:02 2020] Launched synth_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log
+[Fri Feb 28 14:04:02 2020] Launched impl_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/.Xil/Vivado-17921-kamek/dcp/bcd.xdc]
+Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/.Xil/Vivado-17921-kamek/dcp/bcd.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6261.254 ; gain = 0.000 ; free physical = 87078 ; free virtual = 91694
+Restored from archive | CPU: 0.020000 secs | Memory: 0.017906 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6261.254 ; gain = 0.000 ; free physical = 87078 ; free virtual = 91694
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 6451.316 ; gain = 338.133 ; free physical = 86900 ; free virtual = 91515
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
