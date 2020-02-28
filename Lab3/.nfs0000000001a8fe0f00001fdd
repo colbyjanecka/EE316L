@@ -2817,3 +2817,54 @@ dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
 // TclEventType: RUN_STEP_COMPLETED
 // TclEventType: RUN_COMPLETED
 // ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 380 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("bcd_converter.v", 230, 117); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 222, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 225, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 229, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // u:K (t:D, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cn' command handler elapsed time: 7 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Feb 28 16:32:32 2020] Launched synth_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log [Fri Feb 28 16:32:32 2020] Launched impl_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,742 MB. GUI used memory: 56 MB. Current time: 2/28/20 4:33:01 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 8000 ms.
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 110 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bt:g (cd:JFrame):  Open Implemented Design : addNotify

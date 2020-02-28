@@ -46,7 +46,7 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
     not n2(not2, sw[2]);
     not n3(not3, sw[3]);
 
-    and andA0(wireA0, not3, not3, not1, sw[0]);
+    and andA0(wireA0, not3, not2, not1, sw[0]);
     and andA1(wireA1, not3, sw[2], not1, not0);
     and andA2(wireA2, sw[3], sw[2], not1, sw[0]);
     and andA3(wireA3, sw[3], not2, sw[1], sw[0]);
