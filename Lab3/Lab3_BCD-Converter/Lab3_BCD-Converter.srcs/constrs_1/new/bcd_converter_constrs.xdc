@@ -1,5 +1,5 @@
 ## This file is the constraints file. It maps the input/output variables in your design modules to the actual hardware.
-## Each pin corresponds to a device on the board. For example, pin V17 corresponds to SW0, the rightmost switch.
+## Each pin corresponds to a device on the board. For example, pin V17 corresponds to sw0, the rightmost switch.
 ## We use CMOS (LVCMOS33) logic on the board, meaning a "0" is 0V, and a "1" is 3.3V.
 ## You don't need to understand every line of this file, but be able to describe what each of the 6 uncommented lines does.
 
@@ -13,27 +13,27 @@
 	#set_property IOSTANDARD LVCMOS33 [get_ports clk]
 	#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
 
-## Switches
-## Connects pin V17 (SW0 on the board) to input 'SW[0]' in our gate module
-set_property PACKAGE_PIN V17 [get_ports {SW[0]}]
+## switches
+## Connects pin V17 (sw0 on the board) to input 'sw[0]' in our gate module
+set_property PACKAGE_PIN V17 [get_ports {sw[0]}]
 ## Sets the switch to use 3.3V logic
-	set_property IOSTANDARD LVCMOS33 [get_ports {SW[0]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {sw[0]}]
 
-## Connects pin V16 (SW1 on the board) to input 'SW[1]' in our gate module
-set_property PACKAGE_PIN V16 [get_ports {SW[1]}]
+## Connects pin V16 (sw1 on the board) to input 'sw[1]' in our gate module
+set_property PACKAGE_PIN V16 [get_ports {sw[1]}]
 ## Sets the switch to use 3.3V logic
-	set_property IOSTANDARD LVCMOS33 [get_ports {SW[1]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {sw[1]}]
 
 
-## Connects pin W16 (SW2 on the board) to input 'SW[2]' in our gate module
-set_property PACKAGE_PIN W16 [get_ports {SW[2]}]
+## Connects pin W16 (sw2 on the board) to input 'sw[2]' in our gate module
+set_property PACKAGE_PIN W16 [get_ports {sw[2]}]
 ## Sets the switch to use 3.3V logic
-	set_property IOSTANDARD LVCMOS33 [get_ports {SW[2]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {sw[2]}]
 
-## Connects pin W17 (SW3 on the board) to input 'SW[3]' in our gate module
-set_property PACKAGE_PIN W17 [get_ports {SW[3]}]
+## Connects pin W17 (sw3 on the board) to input 'sw[3]' in our gate module
+set_property PACKAGE_PIN W17 [get_ports {sw[3]}]
 ## Sets the switch to use 3.3V logic
-	set_property IOSTANDARD LVCMOS33 [get_ports {SW[3]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {sw[3]}]
 
 
 #set_property PACKAGE_PIN W15 [get_ports {sw[4]}]
@@ -64,9 +64,9 @@ set_property PACKAGE_PIN W17 [get_ports {SW[3]}]
 
 ## LEDs
 ## Connects the output 'output' in our gate module to pin U16 (LED0 on-board)
-set_property PACKAGE_PIN U16 [get_ports {out}]
+#set_property PACKAGE_PIN U16 [get_ports {out}]
 ## Sets the LED to use 3.3V logic
-	set_property IOSTANDARD LVCMOS33 [get_ports {out}]
+#	set_property IOSTANDARD LVCMOS33 [get_ports {out}]
 
 #set_property PACKAGE_PIN E19 [get_ports {combo1}]
 #	set_property IOSTANDARD LVCMOS33 [get_ports {combo1}]
@@ -100,33 +100,33 @@ set_property PACKAGE_PIN U16 [get_ports {out}]
 	#set_property IOSTANDARD LVCMOS33 [get_ports {led[15]}]
 
 
-##7 segment display
-#set_property PACKAGE_PIN W7 [get_ports {seg[0]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {seg[0]}]
-#set_property PACKAGE_PIN W6 [get_ports {seg[1]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {seg[1]}]
-#set_property PACKAGE_PIN U8 [get_ports {seg[2]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {seg[2]}]
-#set_property PACKAGE_PIN V8 [get_ports {seg[3]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {seg[3]}]
-#set_property PACKAGE_PIN U5 [get_ports {seg[4]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {seg[4]}]
-#set_property PACKAGE_PIN V5 [get_ports {seg[5]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {seg[5]}]
-#set_property PACKAGE_PIN U7 [get_ports {seg[6]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {seg[6]}]
+#7 segment display
+set_property PACKAGE_PIN W7 [get_ports {seg[0]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {seg[0]}]
+set_property PACKAGE_PIN W6 [get_ports {seg[1]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {seg[1]}]
+set_property PACKAGE_PIN U8 [get_ports {seg[2]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {seg[2]}]
+set_property PACKAGE_PIN V8 [get_ports {seg[3]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {seg[3]}]
+set_property PACKAGE_PIN U5 [get_ports {seg[4]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {seg[4]}]
+set_property PACKAGE_PIN V5 [get_ports {seg[5]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {seg[5]}]
+set_property PACKAGE_PIN U7 [get_ports {seg[6]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {seg[6]}]
 
 #set_property PACKAGE_PIN V7 [get_ports dp]
 	#set_property IOSTANDARD LVCMOS33 [get_ports dp]
 
-#set_property PACKAGE_PIN U2 [get_ports {an[0]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {an[0]}]
-#set_property PACKAGE_PIN U4 [get_ports {an[1]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {an[1]}]
-#set_property PACKAGE_PIN V4 [get_ports {an[2]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {an[2]}]
-#set_property PACKAGE_PIN W4 [get_ports {an[3]}]
-	#set_property IOSTANDARD LVCMOS33 [get_ports {an[3]}]
+set_property PACKAGE_PIN U2 [get_ports {an[0]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {an[0]}]
+set_property PACKAGE_PIN U4 [get_ports {an[1]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {an[1]}]
+set_property PACKAGE_PIN V4 [get_ports {an[2]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {an[2]}]
+set_property PACKAGE_PIN W4 [get_ports {an[3]}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {an[3]}]
 
 
 ##Buttons
@@ -314,4 +314,3 @@ set_property PACKAGE_PIN U17 [get_ports {down}]
 	#set_property IOSTANDARD LVCMOS33 [get_ports {QspiDB[3]}]
 #set_property PACKAGE_PIN K19 [get_ports QspiCSn]
 	#set_property IOSTANDARD LVCMOS33 [get_ports QspiCSn]
-
