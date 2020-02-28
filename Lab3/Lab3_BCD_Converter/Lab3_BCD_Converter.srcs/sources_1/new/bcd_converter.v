@@ -75,7 +75,7 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
     always @(*)
     begin
         case(sw)
-        4'b0000: seg_buf = 7'b0000001;
+        4'b0000: seg_buf = 7'b1000000;
         4'b0001: seg_buf = 7'b1001111;
         4'b0010: seg_buf = 7'b0010010;
         4'b0011: seg_buf = 7'b0000110;
