@@ -2537,3 +2537,166 @@ dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
 // Elapsed time: 105 seconds
 selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
 dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("bcd_converter.v", 218, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 131, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 124, 366); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("bcd_converter.v", 286, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 379 seconds
+selectCodeEditor("bcd_converter.v", 163, 386); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 137, 384); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 133, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 91, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 132, 385); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 216, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 219, 384); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("bcd_converter.v", 58, 384); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 101 seconds
+selectCodeEditor("bcd_converter.v", 132, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 153, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 103, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 105, 386); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 61, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("bcd_converter.v", 125, 384); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("bcd_converter.v", 105, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 184, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 173, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 168, 413); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 413); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 178, 414); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 70, 427); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 104, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 146, 427); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 165, 431); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 66, 446); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 68, 445); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 105, 444); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 146, 443); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 170, 446); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 68, 457); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 104, 460); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 147, 462); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 194, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 68 seconds
+selectCodeEditor("bcd_converter.v", 76, 266); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("bcd_converter.v", 325, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 52 seconds
+selectCodeEditor("bcd_converter.v", 83, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 336, 259); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 100, 147); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("bcd_converter.v", 117, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 87, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 95, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("bcd_converter.v", 100, 85); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("bcd_converter.v", 98, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("bcd_converter.v", 97, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("bcd_converter.v", 96, 134); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("bcd_converter.v", 319, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("bcd_converter.v", 302, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 117, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 133, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 133, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 133, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 334, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 333, 304); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 133, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 84, 305); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 134, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 182, 309); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("bcd_converter.v", 234, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 239, 309); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 281, 309); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 319, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 59 seconds
+selectCodeEditor("bcd_converter.v", 354, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("bcd_converter.v", 89, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 90, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 90, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 107, 324); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("bcd_converter.v", 237, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 349, 320); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("bcd_converter.v", 354, 328); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 362, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 339, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 347, 320); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 372, 329); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 87, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 137, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("bcd_converter.v", 230, 353); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 358, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 174, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("bcd_converter.v", 274, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 232, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 224, 268); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("bcd_converter.v", 342, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 87, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 143, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 188, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 181, 280); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 254, 280); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 310, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 90, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 142, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 178, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 181, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 231, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 286, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 328, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 353, 243); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 88, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 140, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 235, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 321, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 322, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 352, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 345, 209); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 340, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,742 MB. GUI used memory: 57 MB. Current time: 2/28/20 4:03:01 PM CST
+// Elapsed time: 51 seconds
+selectCodeEditor("bcd_converter.v", 115, 251); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("bcd_converter.v", 467, 346); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
