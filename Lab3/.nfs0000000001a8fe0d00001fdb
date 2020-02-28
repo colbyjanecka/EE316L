@@ -10,3 +10,4 @@
 # Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab3/vivado.jou
 #-----------------------------------------------------------
 start_gui
+create_project Lab3_BCD-Converter /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter -part xc7k70tfbv676-1

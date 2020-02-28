@@ -10,3 +10,8 @@
 # Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab3/vivado.jou
 #-----------------------------------------------------------
 start_gui
+create_project Lab3_BCD-Converter /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter -part xc7k70tfbv676-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/local/packages/xilinx_2016/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:39 . Memory (MB): peak = 5996.348 ; gain = 20.328 ; free physical = 88002 ; free virtual = 92509
