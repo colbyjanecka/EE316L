@@ -31,69 +31,97 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
 
     // Structural
 
-    wire wireA0, wireA1, wireA2, wireA3, 
+    wire wireA0, wireA1, wireA2, wireA3,
          wireB0, wireB1, wireB2, wireB3,
          wireC0, wireC1, wireC2,
          wireD0, wireD1, wireD2, wireD3,
          wireE0, wireE1, wireE2,
          wireF0, wireF1, wireF2, wireF3,
          wireG0, wireG1, wireG2;
-         
+
     wire not0, not1, not2, not3;
-    
+
     not n0(not0, sw[0]);
     not n1(not1, sw[1]);
     not n2(not2, sw[2]);
     not n3(not3, sw[3]);
-    
+
     and andA0(wireA0, not3, not3, not1, sw[0]);
     and andA1(wireA1, not3, sw[2], not1, not0);
     and andA2(wireA2, sw[3], sw[2], not1, sw[0]);
     and andA3(wireA3, sw[3], not2, sw[1], sw[0]);
-    
+
     and andB0(wireB0, not3, sw[2], not1, sw[0]);
     and andB1(wireB1, sw[2], sw[1], not0);
     and andB2(wireB2, sw[3], sw[2], not1, not0);
     and andB3(wireB3, sw[3], sw[1], sw[0]);
-    
-    
-    
-    
-    and andC(wireC, 
-    
+
+    and andC0(wireC0, not3, not2, sw[1], not0);
+    and andC1(wireC1, sw[3], sw[2], sw[1]);
+    and andC2(wireC2, sw[3], sw[2], not0);
+
+    and andD0(wireD0, not3, not2, not1, sw[0]);
+    and andD1(wireD1, not3, sw[2], not1, not0);
+    and andD2(wireD2, sw[2], sw[1], sw[0]);
+    and andD3(wireD3, sw[3], not2, sw[1], not0);
+
+    and andE0(wireE0, not3, sw[0]);
+    and andE1(wireE1, not3, sw[2], not1);
+    and andE2(wireE2, not2, not1, sw[0]);
+
+    and andF0(wireF0, not3, not2, sw[0]);
+    and andF1(wireF1, not3, not2, sw[1]);
+    and andF2(wireF2, not3, sw[1], sw[0]);
+    and andF3(wireF3, sw[3], sw[2], not1, sw[0]);
+
+    and andG0(wireG0, not3, not2, not1);
+    and andG1(wireG1, not3, sw[2], sw[1], sw[0]);
+    and andG2(wireG2, sw[3], sw[2], not1, not0);
+
+    or orA(seg[0], andA0, andA1, andA2, andA3);
+    or orB(seg[1], andB0, andB1, andB2, andB3);
+    or orC(seg[2], andC0, andC1, andC2);
+    or orD(seg[3], andD0, andD1, andD2, andD3);
+    or orE(seg[4], andE0, andE1, andE2);
+    or orF(seg[5], andF0, andF1, andF2, andF3);
+    or orG(seg[6], andG0, andG1, andG2);
+
+
+    and andC(wireC,
+
 
     // Dataflow
 
-//    assign seg[0] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) | 
+//    assign seg[0] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) |
 //                    (~sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
 //                    (sw[3] & sw[2] & ~sw[1] & sw[0]) |
 //                    (sw[3] & ~sw[2] & sw[1] & sw[0]);
-                    
-//    assign seg[1] = (~sw[3] & sw[2] & ~sw[1] & sw[0]) | 
+
+//    assign seg[1] = (~sw[3] & sw[2] & ~sw[1] & sw[0]) |
 //                    (sw[2] & sw[1] & ~sw[0]) |
 //                    (sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
 //                    (sw[3] & sw[1] & sw[0]);
-                    
-//    assign seg[2] = (~sw[3] & ~sw[2] & sw[1] & ~sw[0]) | 
+
+//    assign seg[2] = (~sw[3] & ~sw[2] & sw[1] & ~sw[0]) |
 //                    (sw[3] & sw[2] & sw[1]) |
 //                    (sw[3] & sw[2] & ~sw[0]);
-                    
-//    assign seg[3] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) | 
+
+//    assign seg[3] = (~sw[3] & ~sw[2] & ~sw[1] & sw[0]) |
 //                    (~sw[3] & sw[2] & ~sw[1] & ~sw[0]) |
 //                    (sw[2] & sw[1] & sw[0]) |
 //                    (sw[3] & ~sw[2] & sw[1] & ~sw[0]);
-                    
+
 //    assign seg[4] = (~sw[3] & sw[0]) | (~sw[3] & sw[2] & ~sw[1])
 //                    |(sw[0] & ~sw[1] & ~sw[2]);
-                    
-//    assign seg[5] = (~sw[3] & ~sw[2] & sw[0]) | 
+
+//    assign seg[5] = (~sw[3] & ~sw[2] & sw[0]) |
 //                    (~sw[3] & ~sw[2] & sw[1]) |
 //                    (~sw[3] & sw[1] & sw[0]) |
-//                    (sw[3] & sw[2] & ~sw[1] & sw[0]); 
-                    
-//    assign seg[6] = (~sw[3] & ~sw[2] & ~sw[1]) | 
+//                    (sw[3] & sw[2] & ~sw[1] & sw[0]);
+
+//    assign seg[6] = (~sw[3] & ~sw[2] & ~sw[1]) |
 //                    (~sw[3] & sw[2] & sw[1] & sw[0]) |
-//                    (sw[3] & sw[2] & ~sw[1] & ~sw[0]);                
+//                    (sw[3] & sw[2] & ~sw[1] & ~sw[0]);
 
     // Behavioral
 
@@ -120,7 +148,7 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
         4'b1101: seg_buf = 7'b0100001;
         4'b1110: seg_buf = 7'b0000110;
         4'b1111: seg_buf = 7'b0001110;
-    
+
 
         endcase
     end
