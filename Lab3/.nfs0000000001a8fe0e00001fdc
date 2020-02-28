@@ -298,3 +298,11 @@ No Unisim elements were transformed.
 
 open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 6451.316 ; gain = 338.133 ; free physical = 86900 ; free virtual = 91515
 WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+close_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 6735.906 ; gain = 0.000 ; free physical = 86585 ; free virtual = 91202
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Feb 28 14:09:38 2020] Launched synth_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log
+[Fri Feb 28 14:09:38 2020] Launched impl_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log
