@@ -36,9 +36,8 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
     // Dataflow
 
 //    assign seg[0] = sw[0];
-    assign seg[0] = (sw[3] & ~sw[1]) | (sw[3] & ~sw[2] & ~sw[0])
-                    |(~sw[2] & ~sw[1]) | (sw[2] & ~sw[0])
-                    |(~sw[3] & sw[0]) | (~sw[3] & sw[2] & sw[1]);
+    assign seg[4] = (~sw[3] & sw[0]) | (~sw[3] & sw[2] & ~sw[1])
+                    |(sw[0] & ~sw[1] & ~sw[2]);
 
 
     // Behavioral
