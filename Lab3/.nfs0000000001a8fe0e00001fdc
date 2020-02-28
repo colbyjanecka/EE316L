@@ -15,3 +15,21 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/local/packages/xilinx_2016/Vivado/2016.4/data/ip'.
 create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:39 . Memory (MB): peak = 5996.348 ; gain = 20.328 ; free physical = 88002 ; free virtual = 92509
+file mkdir /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/constrs_1
+file mkdir /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sources_1/new
+file mkdir /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sim_1/new/tb_bcd-converter.v w ]
+add_files -fileset sim_1 /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sim_1/new/tb_bcd-converter.v
+file mkdir /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/constrs_1/new
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/constrs_1/new/bcd-converter_constrs.xdc
+close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/constrs_1/new/bcd-converter_constrs.xdc w ]
+add_files -fileset constrs_1 /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/constrs_1/new/bcd-converter_constrs.xdc
+remove_files  -fileset sim_1 /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sim_1/new/tb_bcd-converter.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sim_1/new/tb_bcd-converter.v
+add_files -norecurse /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sources_1/new/bcd-converter.v
+remove_files  -fileset sim_1 /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sim_1/new/tb_bcd-converter.v
+remove_files  /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sources_1/new/bcd-converter.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
