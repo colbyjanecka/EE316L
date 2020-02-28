@@ -1,0 +1,64 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+Process ID: 17921
+
+Current time: 	2/28/20 11:59:33 AM CST
+Time zone: 	Central Standard Time (US/Central)
+
+OS: CentOS release 6.10 (Final)
+Version: 2.6.32-754.25.1.el6.x86_64
+Architecture: amd64
+Available processors (cores): 24
+
+DISPLAY: localhost:11.0
+Screen size: 1920x1178
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/misc/linuxws/packages/xilinx_2016/Vivado/2016.4/tps/lnx64/jre
+
+User name: 	cjanecka
+User home directory: /home/ecelrc/students/cjanecka
+User working directory: /home/ecelrc/students/cjanecka/EE316L/Lab3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /misc/linuxws/packages/xilinx_2016/Vivado
+RDI data directory: /misc/linuxws/packages/xilinx_2016/Vivado/2016.4/data
+RDI bin directory: /misc/linuxws/packages/xilinx_2016/Vivado/2016.4/bin
+
+Vivado preferences path: /home/ecelrc/students/cjanecka//.Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: /home/ecelrc/students/cjanecka/.Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	210 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,922 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 32 MB (+31428kb) [00:00:12]
+// [Engine Memory]: 4,915 MB (+5001841kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,927 MB. GUI used memory: 26 MB. Current time: 2/28/20 11:59:35 AM CST
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create New Project"); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 40 MB (+6581kb) [00:00:21]
+// g:g (cd:JFrame): New Project: addNotify
+// [GUI Memory]: 48 MB (+5488kb) [00:00:24]
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, g:g)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, g:g)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, g:g)
+// 'g' command handler elapsed time: 9 seconds
+dismissDialog("New Project"); // g:g (cd:JFrame)
+// Elapsed time: 310 seconds
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create New Project"); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// g:g (cd:JFrame): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, g:g)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, g:g)
