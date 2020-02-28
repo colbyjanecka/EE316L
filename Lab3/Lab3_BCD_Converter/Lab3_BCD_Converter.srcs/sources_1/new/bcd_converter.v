@@ -78,16 +78,13 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
     and andG1(wireG1, not3, sw[2], sw[1], sw[0]);
     and andG2(wireG2, sw[3], sw[2], not1, not0);
 
-    or orA(seg[0], andA0, andA1, andA2, andA3);
-    or orB(seg[1], andB0, andB1, andB2, andB3);
-    or orC(seg[2], andC0, andC1, andC2);
-    or orD(seg[3], andD0, andD1, andD2, andD3);
-    or orE(seg[4], andE0, andE1, andE2);
-    or orF(seg[5], andF0, andF1, andF2, andF3);
-    or orG(seg[6], andG0, andG1, andG2);
-
-
-    and andC(wireC,
+    or orA(seg[0], wireA0, wireA1, wireA2, wireA3);
+    or orB(seg[1], wireB0, wireB1, wireB2, wireB3);
+    or orC(seg[2], wireC0, wireC1, wireC2);
+    or orD(seg[3], wireD0, wireD1, wireD2, wireD3);
+    or orE(seg[4], wireE0, wireE1, wireE2);
+    or orF(seg[5], wireF0, wireF1, wireF2, wireF3);
+    or orG(seg[6], wireG0, wireG1, wireG2);
 
 
     // Dataflow
