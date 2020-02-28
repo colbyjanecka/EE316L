@@ -37,3 +37,20 @@ set_property SOURCE_SET sources_1 [get_filesets sim_1]
 add_files -fileset sim_1 -norecurse /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-Converter.srcs/sim_1/new/tb_bcd_converter.v
 launch_simulation
 save_project_as Lab3_BCD_Converter /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter -force
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_bcd_converter.tcl
+close_sim
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_msg_config -suppress -id {Common 17-69} -string {{CRITICAL WARNING: [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:23]} } 
+open_hw
+close_hw
+set_property part xc7a35tcpg236-1 [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

@@ -20,13 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module bcd_converter(
+module bcd(
+   input [3:0] sw,
+   output [3:0] an,
+   output [6:0] seg,
+   output dp );
 
-    input [3:0] sw,
-    output [7:0] seg,
-    output [3:0] an
-
-    );
+assign an = 4'b1110; // Enable rightmost anode, an0
+assign dp = 1; // Disable decimal point since we aren't using it in this lab
 
     // Structural
 

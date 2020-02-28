@@ -20,24 +20,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_bcd_converter;
+module tb_bcd;
 
-
-reg [7:0] sw;
-reg [3:0] an;
+reg [3:0] sw;
+wire [3:0] an;
 wire [7:0] seg;
+wire dp;
 
     // Module test instantiation
-    bcd_converter c(.sw(sw), .AN(AN), .SSD(SSD));
+    bcd bcd(.sw(sw), .an(an), .seg(seg));
 
     initial begin
-    seg = 4'b0000;     // test 1 on SSD
-    an = 2'b01;
-    #50
-    seg = 4'b0002;     // test 2 on SSD
-    #50
-    seg = 4'b0003;     // test 3 on SSD
-    #50
+    sw = 4'b0000;     // test 1 on SSD
+    #50;
+    sw = 4'b0010;     // test 2 on SSD
+    #50;
+    sw = 4'b0011;     // test 3 on SSD
+    #50;
     end
 
 

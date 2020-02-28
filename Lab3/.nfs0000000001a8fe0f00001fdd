@@ -671,3 +671,585 @@ selectCodeEditor("tb_bcd_converter.v", 146, 405); // bF:I (JPanel:JComponent, cd
 selectCodeEditor("tb_bcd_converter.v", 222, 280); // bF:I (JPanel:JComponent, cd:JFrame)
 selectCodeEditor("tb_bcd_converter.v", 243, 276); // bF:I (JPanel:JComponent, cd:JFrame)
 selectCodeEditor("tb_bcd_converter.v", 103, 366); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd_converter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 7 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xvlog.log' file for more information.", 0); // b:a (D:JPanel, a:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.", 1); // b:a (D:JPanel, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("tb_bcd_converter.v", 129, 368); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 117, 368); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 114, 396); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("tb_bcd_converter.v", 131, 421); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("tb_bcd_converter.v", 46, 323); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 47, 364); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 46, 399); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 109, 323); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd_converter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 5 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectCodeEditor("tb_bcd_converter.v", 162, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+// Elapsed time: 136 seconds
+selectCodeEditor("tb_bcd_converter.v", 223, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 23 seconds
+selectCodeEditor("tb_bcd_converter.v", 168, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 96, 348); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd_converter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 9 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.", 1); // b:a (D:JPanel, a:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.", 1); // b:a (D:JPanel, a:a)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.", 1); // b:a (D:JPanel, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2458] undeclared symbol SSD, assumed default net type wire [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v:31]. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 3, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [USF-XSim 62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/elaborate.log' file for more information.. ]", 4, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2458] undeclared symbol SSD, assumed default net type wire [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v:31]. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 3, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectCodeEditor("tb_bcd_converter.v", 191, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 291, 272); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 319, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd_converter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 7 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 3, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 3, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 3, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [USF-XSim 62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/elaborate.log' file for more information.. ]", 4, false); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("tb_bcd_converter.v", 172, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 290, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 322, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 220 seconds
+selectCodeEditor("tb_bcd_converter.v", 41, 192); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 39, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd_converter (tb_bcd_converter.v), c - bcd_converter (bcd_converter.v)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd_converter (tb_bcd_converter.v), c - bcd_converter (bcd_converter.v)]", 8, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("bcd_converter.v", 192, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 243, 299); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 277, 302); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 272, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 130, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 86, 97); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 138, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 20, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 140, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd_converter' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,070 MB. GUI used memory: 43 MB. Current time: 2/28/20 1:32:50 PM CST
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_bcd_converter_behav -key {Behavioral:sim_1:Functional:tb_bcd_converter} -tclbatch {tb_bcd_converter.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Tcl Message: source tb_bcd_converter.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 6099.465 ; gain = 41.836 ; free physical = 87761 ; free virtual = 92303 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bcd_converter_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 6099.465 ; gain = 51.312 ; free physical = 87761 ; free virtual = 92303 
+// 'd' command handler elapsed time: 22 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// Elapsed time: 36 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_bcd_converter", "DesignTask.SIMULATION");
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 6099.465 ; gain = 0.000 ; free physical = 87753 ; free virtual = 92296 
+// Elapsed time: 71 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd_converter (tb_bcd_converter.v)]", 7, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd_converter (tb_bcd_converter.v)]", 7, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("bcd_converter.v", 286, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 286, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 414, 310); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("bcd_converter.v", 175, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 149, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton("RDIResource.HInputHandler_UNICODE_QUOTES_DOUBLE_QUOTES_OR_DASHES_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectCodeEditor("bcd_converter.v", 80, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, bcd_converter_constrs.xdc]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, bcd_converter_constrs.xdc]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("bcd_converter_constrs.xdc", 2, 339); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("bcd_converter_constrs.xdc", 9, 184); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("bcd_converter.v", 84, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("bcd_converter.v", 146, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 115, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 117, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 61, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 159, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectCodeEditor("tb_bcd_converter.v", 123, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 119, 241); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_bcd_converter.v", 271, 324); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 124, 280); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 36 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7k70tfbv676-1 ;  ; Vivado Synthesis Defaults", 0, "constrs_1", 1, true); // T:ab (JViewport:JComponent, cd:JFrame) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): No Implementation Results Available: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// 'cn' command handler elapsed time: 13 seconds
+dismissDialog("No Implementation Results Available"); // y:aO (cd:JFrame)
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Feb 28 13:39:29 2020] Launched synth_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log [Fri Feb 28 13:39:29 2020] Launched impl_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log 
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// ah:y (cd:JFrame): Implementation Failed: addNotify
+// Elapsed time: 74 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah:y (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. ]", 21, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. ]", 21, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. ]", 21, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter_constrs.xdc", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("bcd_converter_constrs.xdc", 316, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 323, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. ]", 21, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. ]", 21, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. ]", 21, true, false, false, false, false, true); // ah:i (JViewport:JComponent, cd:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. , [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 34 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . an[3:0], seg[1], seg[4] and seg[6]. ]", 22, false); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("bcd_converter_constrs.xdc", 376, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. , [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 34 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . an[3:0], seg[1], seg[4] and seg[6]. ]", 22, false); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 32 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc;-;;-;16;-;line;-;18;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 200, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("bcd_converter_constrs.xdc", 330, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 386, 188); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 385, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true, false, false, false, false, true); // ah:i (JViewport:JComponent, cd:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. , [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:23]. ]", 17, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 37, 188); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 190, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 249, 184); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 315, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. , [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:23]. ]", 17, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectMenuItem(PAResourceItoN.MsgTreePanel_SUPPRESS_THIS_MESSAGE, "Suppress this Message"); // ab:JMenuItem (K:JPopupMenu, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. , [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:23]. ]", 17, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cd:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. , [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:23]. ]", 17, false, false, false, false, true, false); // ah:i (JViewport:JComponent, cd:JFrame) - Popup Trigger
+// TclEventType: MSGMGR_REFRESH_MSG
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. ]", 16, true, false, false, false, false, true); // ah:i (JViewport:JComponent, cd:JFrame) - Double Click - Node
+selectCodeEditor("bcd_converter_constrs.xdc", 194, 107); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. , [Common 17-69] Command failed: 'W16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:29]. ]", 17, false); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 164 seconds
+selectCodeEditor("bcd_converter_constrs.xdc", 412, 203); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 420, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 420, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 419, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 419, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 419, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 419, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 417, 120); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 152); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 412, 114); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 412, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 408, 95); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 408, 100); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 414, 104); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 413, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 466, 123); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter_constrs.xdc", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 76, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter_constrs.xdc", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 202, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [DRC 23-20] Rule violation (BIVB-1) Bank IO standard Support - Bank 33 has incompatible IO(s) because: The LVCMOS33 I/O standard is not supported.  Move the following ports or change their properties:  . dp and seg[3]. ]", 26, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26); // u:K (t:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 27, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// 'J' command handler elapsed time: 11 seconds
+// Tcl Message: open_hw 
+// Tcl Message: open_hw: Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:11 . Memory (MB): peak = 6109.184 ; gain = 1.992 ; free physical = 87260 ; free virtual = 91865 
+// Elapsed time: 16 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// Elapsed time: 10 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_SETUP");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// y:aO (cd:JFrame): Close Project: addNotify
+// Tcl Message: close_hw: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 6109.184 ; gain = 0.000 ; free physical = 87267 ; free virtual = 91872 
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Close Project"); // y:aO (cd:JFrame)
+// Elapsed time: 15 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g:JideTabbedPane (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. , [Common 17-69] Command failed: 'W16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:29]. ]", 17, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:18]. , [Common 17-69] Command failed: 'W16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:29]. ]", 17, false, false, false, false, true, false); // ah:i (JViewport:JComponent, cd:JFrame) - Popup Trigger
+// Elapsed time: 230 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+// Elapsed time: 15 seconds
+selectButton("Simulation", "Simulation"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+// TclEventType: FILE_SET_CHANGE
+selectButton("Synthesis", "Synthesis"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+// Elapsed time: 19 seconds
+selectButton("General", "General"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+selectButton(PAResourceOtoP.ProjectSettingsGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q:a (a:s, i:aA)
+// c:c (i:aA): Select Device: addNotify
+// Elapsed time: 67 seconds
+setText("PAResourceOtoP.PartChooser_PARTS_SEARCH_FIELD", "XC7A35TCPG236-1"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, c:c)
+selectTable(PAResourceOtoP.PartChooser_PARTS, "xc7a35tcpg236-1 ; 236 ; 50 ; 90 ; 41600 ; 2 ; 2 ; 106 ; 20800 ; 5 ; 1 ;  ;  ;  ;  ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0", 0, "xc7a35tcpg236-1", 0); // ah:r (JViewport:JComponent, c:c)
+selectTable(PAResourceOtoP.PartChooser_PARTS, "xc7a35tcpg236-1 ; 236 ; 50 ; 90 ; 41600 ; 2 ; 2 ; 106 ; 20800 ; 5 ; 1 ;  ;  ;  ;  ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0", 0, "xc7a35tcpg236-1", 0); // ah:r (JViewport:JComponent, c:c)
+selectTable(PAResourceOtoP.PartChooser_PARTS, "xc7a35tcpg236-1 ; 236 ; 50 ; 90 ; 41600 ; 2 ; 2 ; 106 ; 20800 ; 5 ; 1 ;  ;  ;  ;  ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0", 0, "xc7a35tcpg236-1", 0, false, false, false, false, true); // ah:r (JViewport:JComponent, c:c) - Double Click
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, c:c)
+dismissDialog("Select Device"); // c:c (i:aA)
+selectButton("APPLY", "Apply"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+// y:aO (cd:JFrame): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// b:q (cd:JFrame): Create Run: addNotify
+dismissDialog("Create New Run"); // y:aO (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, b:q)
+dismissDialog("Create Run"); // b:q (cd:JFrame)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+// y:aO (cd:JFrame): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a:JButton (JPanel:JComponent, y:aO)
+// TclEventType: RUN_MODIFY
+// TclEventType: PART_MODIFIED
+// Tcl Message: set_property part xc7a35tcpg236-1 [current_project] 
+dismissDialog("Create New Run"); // y:aO (cd:JFrame)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Bitstream Settings]", 24, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// Project Settings: addNotify
+selectButton("General", "General"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+// Elapsed time: 24 seconds
+setText(PAResourceQtoS.RTLOptionsPanel_SELECT_TOP_MODULE_OF_YOUR_DESIGN, "bcd"); // ak:JTextField (ae:s, i:aA)
+selectButton("APPLY", "Apply"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+// y:aO (cd:JFrame): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Create New Run"); // y:aO (cd:JFrame)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+// y:aO (cd:JFrame): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Create New Run"); // y:aO (cd:JFrame)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cn' command handler elapsed time: 8 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Fri Feb 28 13:57:06 2020] Launched synth_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log [Fri Feb 28 13:57:06 2020] Launched impl_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log 
+// Elapsed time: 31 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. ,  xvlog -m64 --relax -prj tb_bcd_converter_vlog.prj. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module tb_bcd_converter. INFO: [VRFC 10-2263] Analyzing Verilog file /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v into library xil_defaultlib. INFO: [VRFC 10-311] analyzing module glbl. ]", 4, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 4000 ms.
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
