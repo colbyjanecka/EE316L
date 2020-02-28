@@ -68,7 +68,7 @@ assign dp = 1; // Disable decimal point since we aren't using it in this lab
 
     // Behavioral
 
-    reg seg_buf = 0;
+    reg [6:0] seg_buf = 0;
     assign seg = seg_buf;
 
 
