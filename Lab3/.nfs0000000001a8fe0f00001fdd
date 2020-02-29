@@ -2868,3 +2868,1303 @@ dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
 selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
 // Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
 // bt:g (cd:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,742 MB. GUI used memory: 57 MB. Current time: 2/28/20 4:34:26 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.4 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/.Xil/Vivado-17921-kamek/dcp/bcd.xdc] Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/.Xil/Vivado-17921-kamek/dcp/bcd.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6757.734 ; gain = 0.000 ; free physical = 85636 ; free virtual = 90307 
+// Tcl Message: Restored from archive | CPU: 0.010000 secs | Memory: 0.021515 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6757.734 ; gain = 0.000 ; free physical = 85636 ; free virtual = 90307 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:43 . Memory (MB): peak = 6767.723 ; gain = 9.988 ; free physical = 85629 ; free virtual = 90300 
+// ExpRunCommands.openImplResults elapsed time: 49.4s
+// TclEventType: DRC_ADDED
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.0
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dH' command handler elapsed time: 92 seconds
+// Elapsed time: 92 seconds
+dismissDialog("Open Implemented Design"); // bt:g (cd:JFrame)
+// Elapsed time: 127 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,742 MB. GUI used memory: 78 MB. Current time: 2/28/20 4:38:25 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 5,742 MB. GUI used memory: 79 MB. Current time: 2/28/20 4:38:25 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// y:aO (cd:JFrame): Elaborate Design: addNotify
+// Tcl Message: close_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 6767.723 ; gain = 0.000 ; free physical = 85614 ; free virtual = 90298 
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // y:aO (cd:JFrame)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: bcd 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,848 MB. GUI used memory: 58 MB. Current time: 2/28/20 4:38:46 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:11:45 ; elapsed = 04:39:28 . Memory (MB): peak = 6767.723 ; gain = 5748.367 ; free physical = 85600 ; free virtual = 90284 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'bcd' [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v:23] INFO: [Synth 8-256] done synthesizing module 'bcd' (1#1) [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:11:45 ; elapsed = 04:39:29 . Memory (MB): peak = 6767.723 ; gain = 5748.367 ; free physical = 85609 ; free virtual = 90293 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:11:46 ; elapsed = 04:39:30 . Memory (MB): peak = 6767.723 ; gain = 5748.367 ; free physical = 85603 ; free virtual = 90286 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 5 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc] Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// HMemoryUtils.trashcanNow. Engine heap size: 5,875 MB. GUI used memory: 80 MB. Current time: 2/28/20 4:39:24 PM CST
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:11:52 ; elapsed = 04:40:08 . Memory (MB): peak = 6895.188 ; gain = 5875.832 ; free physical = 85601 ; free virtual = 90285 
+// Tcl Message: 6 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 6895.188 ; gain = 127.465 ; free physical = 85601 ; free virtual = 90285 
+// 'dH' command handler elapsed time: 82 seconds
+// Elapsed time: 69 seconds
+dismissDialog("Open Elaborated Design"); // bt:g (cd:JFrame)
+// Elapsed time: 23 seconds
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+// Elapsed time: 33 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // y:JideButton (g:CommandBar, FrameFloatingContainer:ResizableFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Elapsed time: 87 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 254, 440); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 44, 410); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 83, 473); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 80, 472); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 53, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 108, 530); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 80, 533); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 76, 529); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 103, 561); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 108, 560); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 67, 561); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 82, 560); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 100, 469); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 216, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 219, 156); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 219, 183); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 218, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 217, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 218, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 218, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 218, 339); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 218, 368); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 217, 395); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 218, 426); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 219, 457); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 108, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 98, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 101, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 110, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 113, 188); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_bcd_converter.v", 113, 221); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 113, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 113, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 110, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 114, 340); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 112, 366); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 112, 396); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("tb_bcd_converter.v", 112, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 113, 458); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("tb_bcd_converter.v", 110, 73); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 222, 42); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 217, 39); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 221, 65); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 232, 83); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 158, 84); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_bcd_converter.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 85, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 37, 101); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 111, 99); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("tb_bcd_converter.v", 110, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: xvlog -m64 --relax -prj tb_bcd_vlog.prj INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module bcd INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module tb_bcd INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_bcd_behav -key {Behavioral:sim_1:Functional:tb_bcd} -tclbatch {tb_bcd.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// Elapsed time: 36 seconds
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_bcd.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: add_wave: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 6946.609 ; gain = 38.602 ; free physical = 85546 ; free virtual = 90233 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Tcl Message: # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 83 MB. Current time: 2/28/20 4:47:21 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:44 . Memory (MB): peak = 6951.613 ; gain = 56.426 ; free physical = 85500 ; free virtual = 90187 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bcd_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:48 . Memory (MB): peak = 6951.613 ; gain = 56.426 ; free physical = 85500 ; free virtual = 90187 
+// 'd' command handler elapsed time: 50 seconds
+// Elapsed time: 14 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:47:55 PM CST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 45 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Elapsed time: 13 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 21, 8); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:23 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 43, 8); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 55, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 74, 11); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:30 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 88, 6); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 111, 6); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 121, 6); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:34 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 133, 5); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 140, 5); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 105, 6); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:37 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 81, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 47, 8); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 22, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:42 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 31, 11); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 69, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 100, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:47 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 119, 8); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 136, 8); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 143, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:52 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 140, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 144, 11); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 147, 11); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:48:57 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 150, 11); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("tb_bcd_converter.v", 273, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 85 MB. Current time: 2/28/20 4:50:24 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: FILE_SET_CHANGE
+// e:bt (FrameFloatingContainer:ResizableFrame):  Run Simulation : addNotify
+// Elapsed time: 33 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// Tcl Message: close_sim 
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85502 ; free virtual = 90192 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: xvlog -m64 --relax -prj tb_bcd_vlog.prj INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module bcd INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module tb_bcd INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_bcd_behav -key {Behavioral:sim_1:Functional:tb_bcd} -tclbatch {tb_bcd.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// 'd' command handler elapsed time: 61 seconds
+// Tcl Message: Time resolution is 1 ps 
+// Elapsed time: 28 seconds
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+dismissDialog("Run Simulation"); // e:bt (FrameFloatingContainer:ResizableFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_bcd.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: add_wave: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85624 ; free virtual = 90314 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:34 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85619 ; free virtual = 90308 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bcd_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85619 ; free virtual = 90308 
+// Elapsed time: 53 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,924 MB. GUI used memory: 86 MB. Current time: 2/28/20 4:52:38 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 49 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_bcd", "DesignTask.SIMULATION");
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Elapsed time: 32 seconds
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85491 ; free virtual = 90181 
+// Elapsed time: 28 seconds
+closeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // as:DockableFrame (aA:FrameContainer, FrameFloatingContainer:ResizableFrame)
+selectCodeEditor("bcd_converter_constrs.xdc", 293, 85); // bF:I (JPanel:JComponent, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f:Q
+// Elapsed time: 62 seconds
+selectCodeEditor("bcd_converter_constrs.xdc", 239, 135); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter_constrs.xdc", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("bcd_converter.v", 194, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 353, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 517, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 290, 356); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 178, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 113, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 126, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 122, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 120, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 121, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 124, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 118, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd_converter.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd_converter.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tb_bcd_converter.v", 49, 187); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 31 seconds
+selectCodeEditor("tb_bcd_converter.v", 338, 417); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,909 MB. GUI used memory: 82 MB. Current time: 2/28/20 4:57:47 PM CST
+// Engine heap size: 5,909 MB. GUI used memory: 83 MB. Current time: 2/28/20 4:57:47 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+// Tcl Message: close_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86585 ; free virtual = 91274 
+// Elapsed time: 144 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: xvlog -m64 --relax -prj tb_bcd_vlog.prj INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module bcd INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module tb_bcd INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_bcd_behav -key {Behavioral:sim_1:Functional:tb_bcd} -tclbatch {tb_bcd.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Tcl Message: source tb_bcd.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: add_wave: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86571 ; free virtual = 91262 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Tcl Message: # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86578 ; free virtual = 91269 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bcd_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:40 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86578 ; free virtual = 91269 
+// 'd' command handler elapsed time: 42 seconds
+// Elapsed time: 42 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:03:00 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 141 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 483, 72); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 518, -42); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 697, -56); // l:a (JViewport:JComponent, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // y:JideButton (g:CommandBar, cd:JFrame)
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, seg[6:0]]", 2); // a:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 68, 2); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 64 MB. Current time: 2/28/20 5:03:13 PM CST
+// Elapsed time: 11 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 9, -107); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 186, -90); // l:a (JViewport:JComponent, cd:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 192, -128); // l:a (JViewport:JComponent, cd:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 202, -134); // l:a (JViewport:JComponent, cd:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 223, -131); // l:a (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 237, -131); // l:a (JViewport:JComponent, cd:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:03:54 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 100, 36); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 100, 36); // l:a (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 35, 1); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 49, 6, false, false, false, true, false); // l:a (JViewport:JComponent, cd:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, seg[6:0]]", 2, true); // a:i (JViewport:JComponent, cd:JFrame) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, seg[6:0]]", 2, true, false, false, false, true, false); // a:i (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenuItem((HResource) null, "Go To Source Code"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: SIMULATION_OPEN_SCOPE_WINDOW
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SCOPE_WINDOW
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_OPEN_OBJECT_WINDOW
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_OBJECTS_WINDOW
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_OPEN_SOURCE
+selectCodeEditor("tb_bcd_converter.v", 41, 88, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 4", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectMenu((HResource) null, "Waveform Style"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "Reverse Bit Order"); // P:JCheckBoxMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:04:40 PM CST
+// Elapsed time: 11 seconds
+selectMenu((HResource) null, "Radix"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "Reverse Bit Order"); // P:JCheckBoxMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 14 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:05:17 PM CST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:06:09 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:06:13 PM CST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:06:30 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 85 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1365, -113); // l:a (JViewport:JComponent, cd:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1415, -88); // l:a (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1395, 18); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 1393, 9); // l:a (JViewport:JComponent, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 5,849 MB. GUI used memory: 65 MB. Current time: 2/28/20 5:07:01 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 232 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_bcd", "DesignTask.SIMULATION");
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Save", "Save"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+dismissFileChooser();
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_bcd", "DesignTask.SIMULATION");
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Elapsed time: 20 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 87391 ; free virtual = 92083 
+// Elapsed time: 1090 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+// Elapsed time: 12 seconds
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+selectCodeEditor("bcd_converter.v", 245, 359); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 157, 340); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 175, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 185 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, "Add or create design sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+// Elapsed time: 32 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mult.v"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 109 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// Tcl Message: close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: add_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// I:q (cd:JFrame): Define Module: addNotify
+dismissDialog("Add Sources"); // bt:g (cd:JFrame)
+// Elapsed time: 12 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, "input", 1); // W:r (m:JViewport, I:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 0, "Direction", 1); // W:r (m:JViewport, I:q)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,829 MB. GUI used memory: 62 MB. Current time: 2/28/20 5:37:06 PM CST
+// Elapsed time: 155 seconds
+selectCodeEditor("bcd_converter.v", 163, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd_converter.v", 167, 305); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mult (mult.v)]", 9, false); // y:i (D:JPanel, cd:JFrame)
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mult (mult.v)]", 9, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mult (mult.v)]", 9, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("mult.v", 96, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 53, 312); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "mult.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 12, 307); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 140, 340); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 112, 310); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 112, 310, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 177 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd_converter.v)]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd_converter.v)]", 8, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 13 seconds
+dismissFileChooser();
+// 'dz' command handler elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd_converter.v)]", 8, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd_converter.v)]", 8, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// HOptionPane Error: "Invalid file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD-Converter/Lab3_BCD-<br>Converter.srcs/sim_1/new/tb_bcd.v'. File does not exist (Invalid File)"
+// Elapsed time: 64 seconds
+selectButton("RDIResource.HChooserHelpers_INVALID_FILE_FILE_DOES_NOT_EXIST_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// Elapsed time: 40 seconds
+setFileChooser("/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v");
+// 'dz' command handler elapsed time: 105 seconds
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Replace File : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v' with file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v'. INFO: [filemgmt 20-1080] Importing file from '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v' to '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v'. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:05 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 87406 ; free virtual = 92103 
+// Elapsed time: 10 seconds
+dismissDialog("Replace File"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd_converter.v)]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mult (mult.v)]", 9, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v)]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v)]", 8, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v), bcd - bcd (bcd_converter.v)]", 9, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v), bcd - bcd (bcd_converter.v)]", 9, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v), bcd - bcd (bcd_converter.v)]", 9, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 43 seconds
+setFileChooser("/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v");
+// 'dz' command handler elapsed time: 46 seconds
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v' with file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v'. INFO: [filemgmt 20-1080] Importing file from '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v' to '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v'. 
+// bt:g (cd:JFrame):  Replace File : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files: Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:07 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 87381 ; free virtual = 92078 
+// Elapsed time: 11 seconds
+dismissDialog("Replace File"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, bcd_converter_constrs.xdc]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, bcd_converter_constrs.xdc]", 5, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 21 seconds
+setFileChooser("/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc");
+// 'dz' command handler elapsed time: 23 seconds
+// [GUI Memory]: 167 MB (+2135kb) [05:48:15]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc' with file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc'. INFO: [filemgmt 20-1080] Importing file from '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc' to '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc'. 
+// bt:g (cd:JFrame):  Replace File : addNotify
+// [GUI Memory]: 177 MB (+2309kb) [05:48:20]
+dismissDialog("Replace File"); // bt:g (cd:JFrame)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mult (mult.v)]", 10, false); // y:i (D:JPanel, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+// [GUI Memory]: 187 MB (+953kb) [05:49:04]
+// Elapsed time: 13 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb_mult.v"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 28 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// bt:g (cd:JFrame):  Add Simulation Sources  : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_mult.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_mult.v 
+// I:q (cd:JFrame): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bt:g (cd:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 13000 ms.
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mult (mult.v)]", 10, false); // y:i (D:JPanel, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v)]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v)]", 8, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("tb_bcd.v", 63, 577); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "tb_bcd.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_mult (tb_mult.v)]", 10, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_mult (tb_mult.v)]", 10, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("tb_mult.v", 94, 356); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_mult.v", 90, 364); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tb_mult.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_mult.v", 56, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 14000 ms.
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mult.v", 95, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mult.v", 64, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v)]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v)]", 8, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v), bcd - bcd (bcd.v)]", 9, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_bcd (tb_bcd.v), bcd - bcd (bcd.v)]", 9, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("bcd.v", 93, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 139, 385); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 92, 396); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 121, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("mult.v", 84, 347); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "mult.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 4, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 3, 356); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 141, 358); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("mult.v", 138, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 188, 377); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 49, 310); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 71 seconds
+selectCodeEditor("mult.v", 2, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("mult.v", 50, 305); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "mult.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 120, 307); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 129, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 165, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_mult.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("bcd.v", 273, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 62, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 272, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 159, 232); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 217, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 273, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 711 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("mult.v", 113, 410); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,844 MB. GUI used memory: 64 MB. Current time: 2/28/20 6:07:06 PM CST
+// Elapsed time: 10 seconds
+selectCodeEditor("mult.v", 157, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 8, 414); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "mult.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 1, 491); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 178, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 110, 444); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 114, 462); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 113, 478); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 3, 494); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 1, 507); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 27, 490); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 51, 502); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 66, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 85, 489); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 197, 443); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 345, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 353, 511); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 352, 522); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 99, 448); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 184, 445); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 189, 446); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 96, 460); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 211, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mult.v", 140, 371); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("mult.v", 1, 442); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 1, 462); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 1, 474); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("mult.v", 367, 519); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 185, 364); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 370, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 112, 500); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 139, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("mult.v", 359, 515); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 112, 518); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 349, 514); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 3, 517); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 409, 519); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 24 seconds
+selectCodeEditor("mult.v", 49, 518); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 123, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 88, 518); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 329, 502); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 406, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("mult.v", 97, 545); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("mult.v", 91, 541); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 17, 546); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("mult.v", 168, 552); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 196, 554); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("tb_bcd.v", 294, 103); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("tb_bcd.v", 75, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 41, 145); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 41, 145, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 15000 ms.
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_bcd.v", 75, 141); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 75, 141, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("tb_bcd.v", 132, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 149, 147); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_bcd.v", 151, 141); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14, true); // u:K (t:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// y:aO (cd:JFrame): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // y:aO (cd:JFrame)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: mult 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,919 MB. GUI used memory: 64 MB. Current time: 2/28/20 6:15:13 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:15:54 ; elapsed = 06:15:55 . Memory (MB): peak = 6951.621 ; gain = 5932.266 ; free physical = 87202 ; free virtual = 91956 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'mult' [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v:23] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'bcd' [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v:23] INFO: [Synth 8-256] done synthesizing module 'bcd' (1#1) [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v:23] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mult' (2#1) [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:15:55 ; elapsed = 06:15:56 . Memory (MB): peak = 6951.621 ; gain = 5932.266 ; free physical = 87193 ; free virtual = 91947 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:15:55 ; elapsed = 06:15:56 . Memory (MB): peak = 6951.621 ; gain = 5932.266 ; free physical = 87192 ; free virtual = 91946 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// HMemoryUtils.trashcanNow. Engine heap size: 5,944 MB. GUI used memory: 87 MB. Current time: 2/28/20 6:15:44 PM CST
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:16:03 ; elapsed = 06:16:28 . Memory (MB): peak = 6968.801 ; gain = 5949.445 ; free physical = 87190 ; free virtual = 91944 
+// Tcl Message: 7 Infos, 26 Warnings, 25 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:38 . Memory (MB): peak = 6968.801 ; gain = 17.180 ; free physical = 87189 ; free virtual = 91943 
+// 'dH' command handler elapsed time: 67 seconds
+// M:a (cd:JFrame): Critical Messages: addNotify
+// Elapsed time: 61 seconds
+dismissDialog("Open Elaborated Design"); // bt:g (cd:JFrame)
+// Elapsed time: 33 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 37, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, f:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cn' command handler elapsed time: 20 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Feb 28 18:17:22 2020] Launched synth_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log [Fri Feb 28 18:17:22 2020] Launched impl_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:06 . Memory (MB): peak = 6968.801 ; gain = 0.000 ; free physical = 87175 ; free virtual = 91927 
+// Elapsed time: 12 seconds
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 78 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (p:JPanel, cd:JFrame)
+// aO:g (cd:JFrame): Cancel Implementation: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, aO:g)
+// TclEventType: RUN_FAILED
+dismissDialog("Cancel Implementation"); // aO:g (cd:JFrame)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cd:JFrame)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,934 MB. GUI used memory: 86 MB. Current time: 2/28/20 6:19:14 PM CST
+// Engine heap size: 5,934 MB. GUI used memory: 87 MB. Current time: 2/28/20 6:19:14 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// ah:y (cd:JFrame): Bitstream Generation Failed: addNotify
+// Tcl Message: close_design 
+// Tcl Message: close_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 6968.801 ; gain = 0.000 ; free physical = 87191 ; free virtual = 91943 
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Failed"); // ah:y (cd:JFrame)
+selectCodeEditor("tb_bcd.v", 224, 156); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 221, 461); // bF:I (JPanel:JComponent, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("bcd.v", 118, 399); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("mult.v", 78, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "mult.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 131, 385); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 145, 457); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 118, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 128, 422); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 129, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("mult.v", 118, 427); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 105, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("mult.v", 110, 488); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 110, 488, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("mult.v", 102, 501); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 102, 501, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("mult.v", 98, 517); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 98, 517, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("mult.v", 102, 560); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 102, 560, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("mult.v", 42, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 160, 594); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 138, 592); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 138, 592, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("bcd.v", 158, 369); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 159, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("bcd.v", 143, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("mult.v", 200, 594); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 202, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 141, 592); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mult.v", 160, 593); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("mult.v", 289, 579); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_bcd.v", 185, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("tb_bcd.v", 179, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 181, 418); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 39, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 39, 411, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("tb_bcd.v", 71, 414); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 71, 414, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("tb_bcd.v", 139, 415); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 37 seconds
+selectCodeEditor("tb_bcd.v", 342, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 16000 ms.
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_bcd.v", 183, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_bcd.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mult.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tb_bcd.v", 188, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 35, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cn' command handler elapsed time: 11 seconds
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Feb 28 18:28:08 2020] Launched synth_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log [Fri Feb 28 18:28:08 2020] Launched impl_1... Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 9000 ms.
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 108 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:y)
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)

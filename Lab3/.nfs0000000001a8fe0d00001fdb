@@ -95,3 +95,33 @@ reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
 open_run impl_1
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+source tb_bcd.tcl
+close_sim
+launch_simulation
+source tb_bcd.tcl
+close_sim
+close_design
+launch_simulation
+source tb_bcd.tcl
+close_sim
+close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v w ]
+add_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v
+update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v -filesets [get_filesets *]
+update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v -filesets [get_filesets *]
+update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc -filesets [get_filesets *]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_mult.v w ]
+add_files -fileset sim_1 /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_mult.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim tb_bcd_converter_behav -key {Behavioral:sim_1:Functional:tb_bcd_converter} -tclbatch tb_bcd_converter.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim tb_bcd_behav -key {Behavioral:sim_1:Functional:tb_bcd} -tclbatch tb_bcd.tcl -log simulate.log

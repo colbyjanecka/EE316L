@@ -402,3 +402,400 @@ Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:43 . Memory (MB): peak = 6767.723 ; gain = 9.988 ; free physical = 85629 ; free virtual = 90300
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+close_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 6767.723 ; gain = 0.000 ; free physical = 85614 ; free virtual = 90298
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: bcd
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:11:45 ; elapsed = 04:39:28 . Memory (MB): peak = 6767.723 ; gain = 5748.367 ; free physical = 85600 ; free virtual = 90284
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bcd' [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcd' (1#1) [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v:23]
+WARNING: [Synth 8-3917] design bcd has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design bcd has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design bcd has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design bcd has port an[0] driven by constant 0
+WARNING: [Synth 8-3917] design bcd has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:11:45 ; elapsed = 04:39:29 . Memory (MB): peak = 6767.723 ; gain = 5748.367 ; free physical = 85609 ; free virtual = 90293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:11:46 ; elapsed = 04:39:30 . Memory (MB): peak = 6767.723 ; gain = 5748.367 ; free physical = 85603 ; free virtual = 90286
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 5 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc]
+Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:11:52 ; elapsed = 04:40:08 . Memory (MB): peak = 6895.188 ; gain = 5875.832 ; free physical = 85601 ; free virtual = 90285
+6 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 6895.188 ; gain = 127.465 ; free physical = 85601 ; free virtual = 90285
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+xvlog -m64 --relax -prj tb_bcd_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /usr/local/packages/xilinx_2016/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto acb434f691334f05b888d26e20979ef8 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_bcd_behav xil_defaultlib.tb_bcd xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port seg [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bcd
+Compiling module xil_defaultlib.tb_bcd
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_bcd_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xsim.dir/tb_bcd_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 28 16:46:38 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_bcd_behav -key {Behavioral:sim_1:Functional:tb_bcd} -tclbatch {tb_bcd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source tb_bcd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 6946.609 ; gain = 38.602 ; free physical = 85546 ; free virtual = 90233
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:44 . Memory (MB): peak = 6951.613 ; gain = 56.426 ; free physical = 85500 ; free virtual = 90187
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bcd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:48 . Memory (MB): peak = 6951.613 ; gain = 56.426 ; free physical = 85500 ; free virtual = 90187
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85502 ; free virtual = 90192
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+xvlog -m64 --relax -prj tb_bcd_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /usr/local/packages/xilinx_2016/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto acb434f691334f05b888d26e20979ef8 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_bcd_behav xil_defaultlib.tb_bcd xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 7 for port seg [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bcd
+Compiling module xil_defaultlib.tb_bcd
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_bcd_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xsim.dir/tb_bcd_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 28 16:51:20 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_bcd_behav -key {Behavioral:sim_1:Functional:tb_bcd} -tclbatch {tb_bcd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source tb_bcd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85624 ; free virtual = 90314
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:34 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85619 ; free virtual = 90308
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bcd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85619 ; free virtual = 90308
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 85491 ; free virtual = 90181
+close_design
+close_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86585 ; free virtual = 91274
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_bcd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+xvlog -m64 --relax -prj tb_bcd_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /usr/local/packages/xilinx_2016/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto acb434f691334f05b888d26e20979ef8 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_bcd_behav xil_defaultlib.tb_bcd xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bcd
+Compiling module xil_defaultlib.tb_bcd
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_bcd_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav/xsim.dir/tb_bcd_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 28 17:00:01 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_bcd_behav -key {Behavioral:sim_1:Functional:tb_bcd} -tclbatch {tb_bcd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source tb_bcd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86571 ; free virtual = 91262
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86578 ; free virtual = 91269
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_bcd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:40 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 86578 ; free virtual = 91269
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 87391 ; free virtual = 92083
+close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v w ]
+add_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v
+update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd_converter.v' with file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v'.
+INFO: [filemgmt 20-1080] Importing file from '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v' to '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_bcd.v'.
+update_files: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:05 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 87406 ; free virtual = 92103
+update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd_converter.v' with file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v'.
+INFO: [filemgmt 20-1080] Importing file from '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v' to '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v'.
+update_files: Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:07 . Memory (MB): peak = 6951.621 ; gain = 0.000 ; free physical = 87381 ; free virtual = 92078
+update_files -from_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc -to_files /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc' with file '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc'.
+INFO: [filemgmt 20-1080] Importing file from '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc' to '/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc'.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_mult.v w ]
+add_files -fileset sim_1 /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sim_1/new/tb_mult.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: mult
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module bcd [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v:23]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:15:54 ; elapsed = 06:15:55 . Memory (MB): peak = 6951.621 ; gain = 5932.266 ; free physical = 87202 ; free virtual = 91956
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult' [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v:37]
+INFO: [Synth 8-638] synthesizing module 'bcd' [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcd' (1#1) [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/bcd.v:23]
+WARNING: [Synth 8-350] instance 'bcd_out' of module 'bcd' requires 4 connections, but only 1 given [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v:37]
+INFO: [Synth 8-256] done synthesizing module 'mult' (2#1) [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/sources_1/new/mult.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:15:55 ; elapsed = 06:15:56 . Memory (MB): peak = 6951.621 ; gain = 5932.266 ; free physical = 87193 ; free virtual = 91947
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:15:55 ; elapsed = 06:15:56 . Memory (MB): peak = 6951.621 ; gain = 5932.266 ; free physical = 87192 ; free virtual = 91946
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_constrs.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:16:03 ; elapsed = 06:16:28 . Memory (MB): peak = 6968.801 ; gain = 5949.445 ; free physical = 87190 ; free virtual = 91944
+7 Infos, 26 Warnings, 25 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:38 . Memory (MB): peak = 6968.801 ; gain = 17.180 ; free physical = 87189 ; free virtual = 91943
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Feb 28 18:17:22 2020] Launched synth_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log
+[Fri Feb 28 18:17:22 2020] Launched impl_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:06 . Memory (MB): peak = 6968.801 ; gain = 0.000 ; free physical = 87175 ; free virtual = 91927
+close_design
+close_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 6968.801 ; gain = 0.000 ; free physical = 87191 ; free virtual = 91943
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Feb 28 18:28:08 2020] Launched synth_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/runme.log
+[Fri Feb 28 18:28:08 2020] Launched impl_1...
+Run output will be captured here: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/impl_1/runme.log

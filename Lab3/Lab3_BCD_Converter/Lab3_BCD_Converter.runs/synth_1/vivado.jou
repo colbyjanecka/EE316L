@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Feb 28 16:32:32 2020
-# Process ID: 20007
+# Start of session at: Fri Feb 28 18:28:09 2020
+# Process ID: 30713
 # Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1
-# Command line: vivado -log bcd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcd.tcl
-# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/bcd.vds
+# Command line: vivado -log mult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult.tcl
+# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/mult.vds
 # Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source bcd.tcl -notrace
+source mult.tcl -notrace
