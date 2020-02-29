@@ -1,35 +1,29 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
-// Create Date: 02/28/2020 12:12:54 PM
-// Design Name:
-// Module Name: tb_bcd-converter
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
+// Company: 
+// Engineer: 
+// 
+// Create Date: 02/28/2020 05:48:50 PM
+// Design Name: 
+// Module Name: tb_mult
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-//
+// 
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_bcd;
+module tb_mult(
 
-reg [3:0] sw;
-wire [3:0] an;
-wire [6:0] seg;
-wire dp;
-
-    // Module test instantiation
-    bcd bcd(.sw(sw), .an(an), .seg(seg), .dp(dp));
-
+    );
+    
     initial begin
     sw = 4'b0000;     // test 0 on SSD
     #10;
@@ -64,7 +58,4 @@ wire dp;
     sw = 4'b1111;     // test F on SSD
     #10;
     end
-
-
-
 endmodule
