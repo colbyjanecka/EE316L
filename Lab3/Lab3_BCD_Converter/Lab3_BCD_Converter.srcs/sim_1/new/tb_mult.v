@@ -20,9 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_mult(
+module tb_bcd;
 
-    );
+reg [3:0] sw;
+wire [3:0] an;
+wire [6:0] seg;
+wire dp;
+
+    mult mult(.sw(sw), .an(an), .seg(seg), .dp(dp));
     
     initial begin
     sw = 4'b0000;     // test 0 on SSD

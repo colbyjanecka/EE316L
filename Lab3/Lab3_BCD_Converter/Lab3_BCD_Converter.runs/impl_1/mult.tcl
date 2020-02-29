@@ -44,8 +44,6 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -ruleid {1}  -id {Common 17-69}  -string {{CRITICAL WARNING: [Common 17-69] Command failed: 'V16' is not a valid site or package pin name. [/home/ecelrc/students/cjanecka/EE316L/Lab3/Lab3_BCD_Converter/Lab3_BCD_Converter.srcs/constrs_1/new/bcd_converter_constrs.xdc:23]}}  -suppress 
 
 start_step init_design
