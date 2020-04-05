@@ -31,12 +31,13 @@ module clks(
     assign led[11:0] = div;
 
     reg [3:0] count12 = 0;
-
     assign div12 = count12[3] & count12[0]; // check for 10
     assign led[12] = div12;
 
+    assign div13 = count12[0];
+    assign led[13] = div13;
+
     assign div2 = count[0];
-    assign led[13] = div2;   // 50 MHz placeholder
     assign led[14] = div2;   // 50 MHz placeholder
     assign led[15] = div2;   // 50 MHz placeholder
 
