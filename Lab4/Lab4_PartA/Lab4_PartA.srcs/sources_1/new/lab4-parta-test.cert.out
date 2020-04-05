@@ -1,0 +1,401 @@
+"-*- Mode: auto-revert -*-"
+/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartA/Lab4_PartA.srcs/sources_1/new
+HOST: wario.ece.utexas.edu
+
+Environment variables:
+ACL2_CUSTOMIZATION=NONE
+ACL2_SYSTEM_BOOKS=/home/ecelrc/students/mtemel/acl2/books
+ACL2=/home/ecelrc/students/mtemel/acl2/ccl-saved_acl2
+
+Temp lisp file:
+(acl2::value :q)
+(acl2::in-package "ACL2")
+; see github issue #638 (waterfall-parallelism and profiling): 
+#+(and hons (not acl2-par)) (profile-fn 'prove)
+#+(and hons (not acl2-par)) (profile-fn 'certify-book-fn)
+(acl2::lp)
+(set-debugger-enable :bt)
+(acl2::in-package "ACL2")
+
+(set-ld-error-action (quote (:exit 1)) state)
+(set-inhibit-output-lst (list (quote prove) (quote proof-tree) (quote warning) (quote observation) (quote event) (quote history)))
+
+(acl2::assign acl2::get-internal-time-as-realtime acl2::t)
+#-cmucl (acl2::gc-verbose t)
+; instructions from .acl2 file cert.acl2:
+;; cert-flags: ? t :ttags :all :skip-proofs-okp t
+
+
+; Prevent reset-prehistory while loading .port files
+(acl2::assign acl2::skip-reset-prehistory acl2::t)
+; portculli for included books:
+(acl2::ld "centaur/misc/memory-mgmt-logic.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/sv/top.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/vl/loader/top.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "oslib/ls.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/svl/top.port" :dir :SYSTEM :ld-missing-input-ok t)
+#!ACL2 (set-ld-error-action (quote :continue) state)
+
+; certify-book command flags: ? t :ttags :all :skip-proofs-okp t
+#!ACL2 (er-progn (time$ (certify-book "lab4-parta-test" ? t :ttags :all :skip-proofs-okp t  ))
+                                 (value (prog2$ #+hons (memsum)
+                                                 #-hons nil
+                                                 (exit 43))))
+--- End temp lisp file ---
+
+TARGET: lab4-parta-test
+STEP: certify
+Start of output:
+
+Welcome to Clozure Common Lisp Version 1.11.5/v1.11.5  (LinuxX8664)!
+
+ ACL2 Version 8.2 built March 18, 2020  10:39:16.
+ Copyright (C) 2019, Regents of the University of Texas
+ ACL2 comes with ABSOLUTELY NO WARRANTY.  This is free software and you
+ are welcome to redistribute it under certain conditions.  For details,
+ see the LICENSE file distributed with ACL2.
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ + WARNING: This is NOT an ACL2 release; it is a development snapshot  +
+ + (git commit hash: ac9c0d433f1b744b59ea9ac3f73f1acebf08f362).        +
+ + On rare occasions development snapshots may be incomplete, fragile, +
+ + or unable to pass the usual regression tests.                       +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Initialized with (INITIALIZE-ACL2 'INCLUDE-BOOK *ACL2-PASS-2-FILES*).
+ See the documentation topic note-8-2 for recent changes.
+ Note: We have modified the prompt in some underlying Lisps to further
+ distinguish it from the ACL2 prompt.
+
+ACL2 Version 8.2.  Level 1.  Cbd 
+"/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartA/Lab4_PartA.srcs/sources_1/new/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>
+Exiting the ACL2 read-eval-print loop.  To re-enter, execute (LP).
+? #<Package "ACL2">
+? PROVE
+? CERTIFY-BOOK-FN
+? 
+ACL2 Version 8.2.  Level 1.  Cbd 
+"/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartA/Lab4_PartA.srcs/sources_1/new/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !><state>
+ACL2 !> "ACL2"
+ACL2 !> (:EXIT 1)
+ACL2 !> (PROVE PROOF-TREE
+        WARNING OBSERVATION EVENT HISTORY)
+ACL2 !> T
+ACL2 !>NIL
+ACL2 !> T
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/misc/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/portcullis" ...)
+Rules: NIL
+Time:  0.15 seconds (prove: 0.00, print: 0.00, other: 0.15)
+ "/home/ecelrc/students/mtemel/acl2/books/std/portcullis.lisp"
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/sv/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  0.40 seconds (prove: 0.00, print: 0.00, other: 0.40)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/portcullis" ...)
+Rules: NIL
+Time:  0.20 seconds (prove: 0.00, print: 0.00, other: 0.20)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/gl/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.06 seconds (prove: 0.00, print: 0.00, other: 0.06)
+ "/home/ecelrc/students/mtemel/acl2/books/cowles/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.07 seconds (prove: 0.00, print: 0.00, other: 0.07)
+ "/home/ecelrc/students/mtemel/acl2/books/data-structures/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/4v-sexpr/portcullis" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/4v-sexpr/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "tools/flag" ...)
+Rules: NIL
+Time:  0.12 seconds (prove: 0.00, print: 0.00, other: 0.12)
+ "/home/ecelrc/students/mtemel/acl2/books/tools/flag.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/aig/portcullis" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/aig/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ "/home/ecelrc/students/mtemel/acl2/books/std/typed-lists/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "coi/nary/portcullis" ...)
+Rules: NIL
+Time:  0.03 seconds (prove: 0.00, print: 0.00, other: 0.03)
+ "/home/ecelrc/students/mtemel/acl2/books/coi/nary/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "coi/util/portcullis" ...)
+Rules: NIL
+Time:  0.05 seconds (prove: 0.00, print: 0.00, other: 0.05)
+ "/home/ecelrc/students/mtemel/acl2/books/coi/util/portcullis.lisp"
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "../portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/sv/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/oslib/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/fty/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/svl/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  1.43 seconds (prove: 0.00, print: 0.00, other: 1.43)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/svl/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/4v-sexpr/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "system/apply/apply-constraints" ...)
+Rules: NIL
+Time:  0.86 seconds (prove: 0.00, print: 0.00, other: 0.86)
+ "/home/ecelrc/students/mtemel/acl2/books/system/apply/apply-constraints.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !> :CONTINUE
+ACL2 !>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/misc/memory-mgmt-logic" ...)
+Rules: NIL
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+"/home/ecelrc/students/mtemel/acl2/books/centaur/misc/memory-mgmt-logic.lisp"
+; set-max-mem: raw lisp definition not installed?
+NIL
+
+TTAG NOTE (for included book): Adding ttag :FAST-ALIST-POP from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/fast-alist-pop.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :SNEAKY-LOAD from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/sneaky-load.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :BIGNUM-EXTRACT from book /home/ecelrc/students/mtemel/acl2/books/std/bitsets/bignum-extract-opt.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :SWAP-ELAB-MODS from book /home/ecelrc/students/mtemel/acl2/books/centaur/sv/mods/moddb.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-OPTIMIZE from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/print.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-OPTIMIZE from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/echars.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :CW-UNFORMATTED from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/cw-unformatted.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :OPEN-OUTPUT-CHANNEL! from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/print.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :MEMORY-MGMT from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/memory-mgmt.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-GC from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/gc.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :OSLIB from book /home/ecelrc/students/mtemel/acl2/books/oslib/date.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+Note (from clause-processors/equality): disabling DISJOIN, DISJOIN2,
+CONJOIN and CONJOIN2.
+
