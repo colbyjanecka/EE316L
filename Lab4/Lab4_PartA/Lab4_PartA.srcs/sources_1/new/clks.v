@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 04/05/2020 03:38:44 PM
-// Design Name: 
+// Design Name:
 // Module Name: clks
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -24,7 +24,12 @@ module clks(
     input clk,
     output [15:0] led
     );
-    
-    
-    
+
+    wire div2;
+    assign div2 = count[0];
+
+    always @(postedge clk) begin
+        count = count + 1;
+    end
+
 endmodule
