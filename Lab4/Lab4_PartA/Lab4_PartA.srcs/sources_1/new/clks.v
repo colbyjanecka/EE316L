@@ -35,12 +35,15 @@ module clks(
     assign led[12] = div12;
 
     reg [7:0] count13 = 0;
-    assign div13 = count13[6] & count13[5]
-                & count13[1] & count13[0];
+    assign div13 = count13[6] & count13[5] & count13[1] & count13[0];
     assign led[13] = div13;
 
+    reg [10:0] count14 = 0;
+    assign div14 = count14[9] & count14[8] & count14[7] & count14[6]
+                & count14[5] & count14[2] & count14[1] & count14[0];
+    assign led[14] = div14;
+
     assign div2 = count[0];
-    assign led[14] = div2;   // 50 MHz placeholder
     assign led[15] = div2;   // 50 MHz placeholder
 
     always @(posedge clk) begin
@@ -51,6 +54,9 @@ module clks(
 
         if(count13 == 99) count13 = 0;
         else count13 = count13 + 1;
+
+        if(count14 == 999) count14 = 0;
+        else count14 = count14 + 1;
 
     end
 
