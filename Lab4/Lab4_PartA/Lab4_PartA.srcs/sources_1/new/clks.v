@@ -26,9 +26,11 @@ module clks(
     );
 
     wire div2;
-    assign div2 = count[0];
+    reg [11:0] count = 0;
+    
+    assign led[0] = count[0];   // set led to 50 hz
 
-    always @(postedge clk) begin
+    always @(posedge clk) begin
         count = count + 1;
     end
 
