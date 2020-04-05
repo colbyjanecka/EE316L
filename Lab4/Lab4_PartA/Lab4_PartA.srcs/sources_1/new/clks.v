@@ -46,6 +46,7 @@ module clks(
     reg[13:0] count15 = 0;
     assign div15 = count15[13] & count15[10] & count15[9] & count15[8]
                 & count15[3] & count15[2] & count15[1] & count15[0];
+    assign led[15] = div15;
 
     always @(posedge clk) begin
         count = count + 1;  // count for led 0 - 11
