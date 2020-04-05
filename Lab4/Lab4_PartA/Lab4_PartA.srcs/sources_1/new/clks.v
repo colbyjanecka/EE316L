@@ -32,7 +32,7 @@ module clks(
 
     reg [3:0] count12 = 0;
 
-    assign div12 = count12[3] & count12[1]; // check for 10
+    assign div12 = count12[3] & count12[0]; // check for 10
     assign led[12] = div12;
 
     assign div2 = count[0];
