@@ -30,7 +30,7 @@ module clks(
 //    wire div2, div4, div8, div16, div32, div64, div128,
 //         div256, div512, div1024, div2048, div4096;
 
-//    assign div2 = count[0];
+    assign div2 = count[0];
 //    assign div4 = count[1];   // set led to 25 MHz
 //    assign div8 = count[2];   // set led to 12.5 MHz
 //    assign div16 = count[3];   // set led to 6.25 MHz
