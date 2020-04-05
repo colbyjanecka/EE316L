@@ -34,7 +34,9 @@ module clks(
     assign div12 = count12[3] & count12[0]; // check for 10
     assign led[12] = div12;
 
-    assign div13 = count12[0];
+    reg [7:0] count13 = 0;
+    assign div13 = count13[6] & count13[5]
+                & count13[1] & count13[0];
     assign led[13] = div13;
 
     assign div2 = count[0];
@@ -46,6 +48,9 @@ module clks(
 
         if(count12 == 9) count12 = 0;
         else count12 = count12 + 1;
+
+        if(count13 == 99) count13 = 0;
+        else count13 = count13 + 1;
 
     end
 
