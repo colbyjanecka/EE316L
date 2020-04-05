@@ -40,6 +40,10 @@ module clks(
     assign led[9] = count[9];   // set led to 97.7 kHz
     assign led[10] = count[10];   // set led to 48.8 kHz
     assign led[11] = count[11];   // set led to 24.4 kHz
+    assign led[12] = count[12];   // 50 MHz placeholder
+    assign led[13] = count[13];   // 50 MHz placeholder
+    assign led[14] = count[14];   // 50 MHz placeholder
+    assign led[15] = count[15];   // 50 MHz placeholder
 
     always @(posedge clk) begin
         count = count + 1;
