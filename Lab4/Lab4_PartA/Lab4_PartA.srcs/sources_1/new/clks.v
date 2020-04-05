@@ -26,7 +26,7 @@ module clks(
     );
 
     reg [11:0] count = 0;
-    
+
 //    wire div2, div4, div8, div16, div32, div64, div128,
 //         div256, div512, div1024, div2048, div4096;
 
@@ -62,10 +62,14 @@ module clks(
 //    assign led[15] = div2;   // 50 MHz placeholder
 
     wire [11:0] div;
-    
+
     assign div = count;
-    
+
     assign led[11:0] = div;
+    assign led[12] = div2;   // 50 MHz placeholder
+    assign led[13] = div2;   // 50 MHz placeholder
+    assign led[14] = div2;   // 50 MHz placeholder
+    assign led[15] = div2;   // 50 MHz placeholder
 
     always @(posedge clk) begin
         count = count + 1;
