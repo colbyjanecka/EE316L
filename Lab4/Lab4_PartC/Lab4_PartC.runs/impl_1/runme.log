@@ -1,0 +1,125 @@
+
+*** Running vivado
+    with args -log sevenseg.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source sevenseg.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source sevenseg.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'resest'. [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.srcs/constrs_1/new/sevenseg_constrs.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1369.730 ; gain = 282.855 ; free physical = 59797 ; free virtual = 83845
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.27 . Memory (MB): peak = 1484.758 ; gain = 115.027 ; free physical = 59768 ; free virtual = 83817
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 2269bc97a
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 2269bc97a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1884.191 ; gain = 0.000 ; free physical = 59421 ; free virtual = 83470
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: 2269bc97a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1884.191 ; gain = 0.000 ; free physical = 59421 ; free virtual = 83470
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 2269bc97a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1884.191 ; gain = 0.000 ; free physical = 59421 ; free virtual = 83470
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 2269bc97a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1884.191 ; gain = 0.000 ; free physical = 59421 ; free virtual = 83470
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1884.191 ; gain = 0.000 ; free physical = 59421 ; free virtual = 83470
+Ending Logic Optimization Task | Checksum: 2269bc97a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1884.191 ; gain = 0.000 ; free physical = 59421 ; free virtual = 83470
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 2269bc97a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1884.191 ; gain = 0.000 ; free physical = 59421 ; free virtual = 83470
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1884.191 ; gain = 514.461 ; free physical = 59421 ; free virtual = 83470
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1914.199 ; gain = 0.000 ; free physical = 59420 ; free virtual = 83469
+INFO: [Common 17-1381] The checkpoint '/home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.runs/impl_1/sevenseg_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ecelrc/students/cjanecka/EE316L/Lab4/Lab4_PartC/Lab4_PartC.runs/impl_1/sevenseg_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC 23-20] Rule violation (BIVC-1) Bank IO standard Vcc - Conflicting Vcc voltages in bank 14. For example, the following two ports in this bank have conflicting VCCOs:  
+reset (LVCMOS18, requiring VCCO=1.800) and sw[0] (LVCMOS33, requiring VCCO=3.300)
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 3 Warnings, 3 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  6 16:17:12 2020...
