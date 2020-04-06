@@ -34,29 +34,37 @@ module sevenseg(
     reg [1:0] current_state = 0;
     reg dp = 1;
     
-    clkdiv c1(clk, slow_clk);
+    wire [3:0] an0, an1, an2, an3;
+    wire [6:0] seg0, seg1, seg2, seg3;
+    wire dp0, dp1, dp2, dp3;
     
+    bcd bcd1 (sw[3:0],  an0,  seg0, dp0);
+    bcd bcd2 (sw[7:4],  an1,  seg1, dp1);
+    bcd bcd3 (sw[11:8],  an2,  seg2, dp2);
+    bcd bcd4 (sw[15:12], an3,  seg3, dp3);
+    
+    clkdiv c1(clk, slow_clk);
     
     always @(*) begin
         case(current_state)
         0: begin
             an = 4'b1110;
-            out = sw[3:0];
+            seg = seg0;
             if(reset == 0) next_state = 1;
             end
         1: begin
             an = 4'b1101;
-            out = sw[7:4];
+            seg = seg1;
             if(reset == 0) next_state = 2;
             end
         2: begin
             an = 4'b1011;
-            out = sw[11:8];
+            seg = seg2;
             if(reset == 0) next_state = 3;
             end
         3: begin
             an = 4'b0111;
-            out = sw[15:12];
+            seg = seg3;
             if(reset == 0) next_state = 0;
             end
         endcase
@@ -67,21 +75,8 @@ module sevenseg(
         if(reset == 1) next_state <= 0;
         current_state <= next_state;
     end
+
+            
     
     
-    always @(*) begin
-    case(out)
-        0: seg = 7'b0000001;
-        1: seg = 7'b1001111;
-        2: seg = 7'b0010010;
-        3: seg = 7'b0000110;
-        4: seg = 7'b1001100;
-        5: seg = 7'b0100100;
-        6: seg = 7'b0100000;
-        7: seg = 7'b0001111;
-        8: seg = 7'b0000000;
-        9: seg = 7'b0000100;
-        default: seg = 7'b0000001;
-        endcase
-    end
 endmodule
