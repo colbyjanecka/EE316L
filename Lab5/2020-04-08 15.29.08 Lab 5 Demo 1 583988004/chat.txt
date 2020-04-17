@@ -1,0 +1,17 @@
+15:31:20	 From  Victor Lai : yes
+15:31:20	 From  Alice Liu : yes can hear
+15:32:01	 From  Ishraq Hasan : no
+15:32:10	 From  Ishraq Hasan : havent watched it yet
+15:32:11	 From  John Buchanan :                        nope     
+15:32:15	 From  Ishraq Hasan : heard its pretty good
+15:33:49	 From  Ishraq Hasan : I first heard at Trevor Noah show 
+15:34:24	 From  Ishraq Hasan : lol
+15:39:46	 From  Ishraq Hasan : after the lab discussion is it possible to explain how our exam gonna be
+15:40:48	 From  Ishraq Hasan : ok
+15:54:25	 From  Stephen Petrick : so the cla calculates the first sum bit initially and the carry bit?
+15:54:37	 From  Stephen Petrick : *simultaneously
+15:55:59	 From  Stephen Petrick : ok thank you
+15:59:25	 From  Stephen Petrick : by default it should be in decimal right? it should only be hex when we specify it in the code?
+16:00:44	 From  Victor Lai : I think default is hex
+16:01:08	 From  Stephen Petrick : ah kk, thanks
+16:03:18	 From  John Buchanan : thank you!
