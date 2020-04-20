@@ -1,0 +1,2023 @@
+"-*- Mode: auto-revert -*-"
+/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new
+HOST: mario.ece.utexas.edu
+
+Environment variables:
+ACL2_CUSTOMIZATION=NONE
+ACL2_SYSTEM_BOOKS=/home/ecelrc/students/mtemel/acl2/books
+ACL2=/home/ecelrc/students/mtemel/acl2/ccl-saved_acl2
+
+Temp lisp file:
+(acl2::value :q)
+(acl2::in-package "ACL2")
+; see github issue #638 (waterfall-parallelism and profiling): 
+#+(and hons (not acl2-par)) (profile-fn 'prove)
+#+(and hons (not acl2-par)) (profile-fn 'certify-book-fn)
+(acl2::lp)
+(set-debugger-enable :bt)
+(acl2::in-package "ACL2")
+
+(set-ld-error-action (quote (:exit 1)) state)
+(set-inhibit-output-lst (list (quote prove) (quote proof-tree) (quote warning) (quote observation) (quote event) (quote history)))
+
+(acl2::assign acl2::get-internal-time-as-realtime acl2::t)
+#-cmucl (acl2::gc-verbose t)
+; instructions from .acl2 file cert.acl2:
+;; cert-flags: ? t :ttags :all :skip-proofs-okp t
+
+
+; Prevent reset-prehistory while loading .port files
+(acl2::assign acl2::skip-reset-prehistory acl2::t)
+; portculli for included books:
+(acl2::ld "centaur/misc/memory-mgmt-logic.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/sv/top.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/vl/loader/top.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "oslib/ls.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/svl/top.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/gl/gl.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/misc/memory-mgmt.port" :dir :SYSTEM :ld-missing-input-ok t)
+(acl2::ld "centaur/gl/bfr-satlink.port" :dir :SYSTEM :ld-missing-input-ok t)
+#!ACL2 (set-ld-error-action (quote :continue) state)
+
+; certify-book command flags: ? t :ttags :all :skip-proofs-okp t
+#!ACL2 (er-progn (time$ (certify-book "lab5test-a" ? t :ttags :all :skip-proofs-okp t  ))
+                                 (value (prog2$ #+hons (memsum)
+                                                 #-hons nil
+                                                 (exit 43))))
+--- End temp lisp file ---
+
+TARGET: lab5test-a
+STEP: certify
+Start of output:
+
+Welcome to Clozure Common Lisp Version 1.11.5/v1.11.5  (LinuxX8664)!
+
+ ACL2 Version 8.2 built March 18, 2020  10:39:16.
+ Copyright (C) 2019, Regents of the University of Texas
+ ACL2 comes with ABSOLUTELY NO WARRANTY.  This is free software and you
+ are welcome to redistribute it under certain conditions.  For details,
+ see the LICENSE file distributed with ACL2.
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ + WARNING: This is NOT an ACL2 release; it is a development snapshot  +
+ + (git commit hash: ac9c0d433f1b744b59ea9ac3f73f1acebf08f362).        +
+ + On rare occasions development snapshots may be incomplete, fragile, +
+ + or unable to pass the usual regression tests.                       +
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Initialized with (INITIALIZE-ACL2 'INCLUDE-BOOK *ACL2-PASS-2-FILES*).
+ See the documentation topic note-8-2 for recent changes.
+ Note: We have modified the prompt in some underlying Lisps to further
+ distinguish it from the ACL2 prompt.
+
+ACL2 Version 8.2.  Level 1.  Cbd 
+"/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>
+Exiting the ACL2 read-eval-print loop.  To re-enter, execute (LP).
+? #<Package "ACL2">
+? PROVE
+? CERTIFY-BOOK-FN
+? 
+ACL2 Version 8.2.  Level 1.  Cbd 
+"/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !><state>
+ACL2 !> "ACL2"
+ACL2 !> (:EXIT 1)
+ACL2 !> (PROVE PROOF-TREE
+        WARNING OBSERVATION EVENT HISTORY)
+ACL2 !> T
+ACL2 !>NIL
+ACL2 !> T
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/misc/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/portcullis" ...)
+Rules: NIL
+Time:  0.10 seconds (prove: 0.00, print: 0.00, other: 0.10)
+ "/home/ecelrc/students/mtemel/acl2/books/std/portcullis.lisp"
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/sv/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  0.26 seconds (prove: 0.00, print: 0.00, other: 0.26)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/portcullis" ...)
+Rules: NIL
+Time:  0.14 seconds (prove: 0.00, print: 0.00, other: 0.14)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/gl/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.04 seconds (prove: 0.00, print: 0.00, other: 0.04)
+ "/home/ecelrc/students/mtemel/acl2/books/cowles/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.05 seconds (prove: 0.00, print: 0.00, other: 0.05)
+ "/home/ecelrc/students/mtemel/acl2/books/data-structures/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/4v-sexpr/portcullis" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/4v-sexpr/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "tools/flag" ...)
+Rules: NIL
+Time:  0.09 seconds (prove: 0.00, print: 0.00, other: 0.09)
+ "/home/ecelrc/students/mtemel/acl2/books/tools/flag.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/aig/portcullis" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/aig/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ "/home/ecelrc/students/mtemel/acl2/books/std/typed-lists/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "coi/nary/portcullis" ...)
+Rules: NIL
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+ "/home/ecelrc/students/mtemel/acl2/books/coi/nary/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "coi/util/portcullis" ...)
+Rules: NIL
+Time:  0.04 seconds (prove: 0.00, print: 0.00, other: 0.04)
+ "/home/ecelrc/students/mtemel/acl2/books/coi/util/portcullis.lisp"
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "../portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/sv/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/oslib/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/fty/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/svl/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  0.93 seconds (prove: 0.00, print: 0.00, other: 0.93)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/svl/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/4v-sexpr/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "system/apply/apply-constraints" ...)
+Rules: NIL
+Time:  0.65 seconds (prove: 0.00, print: 0.00, other: 0.65)
+ "/home/ecelrc/students/mtemel/acl2/books/system/apply/apply-constraints.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/fty/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "tools/flag" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/aig/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/misc/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>Bye.
+ :EOF
+ACL2 !>
+ACL2 Version 8.2.  Level 2.  Cbd 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/".
+System books directory "/home/ecelrc/students/mtemel/acl2/books/".
+Type :help for help.
+Type (good-bye) to quit completely out of ACL2.
+
+ACL2 !>> "ACL2"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "cowles/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "data-structures/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/fty/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "tools/flag" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/aig/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "std/typed-lists/portcullis" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+ :REDUNDANT
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/truth/portcullis" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+ "/home/ecelrc/students/mtemel/acl2/books/centaur/truth/portcullis.lisp"
+ACL2 !>>
+Summary
+Form:  ( INCLUDE-BOOK "projects/sat/lrat/portcullis" ...)
+Rules: NIL
+Time:  0.03 seconds (prove: 0.00, print: 0.00, other: 0.03)
+ "/home/ecelrc/students/mtemel/acl2/books/projects/sat/lrat/portcullis.lisp"
+ACL2 !>>Bye.
+ :EOF
+ACL2 !> :CONTINUE
+ACL2 !>
+Summary
+Form:  ( INCLUDE-BOOK "centaur/misc/memory-mgmt-logic" ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+"/home/ecelrc/students/mtemel/acl2/books/centaur/misc/memory-mgmt-logic.lisp"
+; set-max-mem: raw lisp definition not installed?
+NIL
+
+TTAG NOTE (for included book): Adding ttag :FAST-ALIST-POP from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/fast-alist-pop.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :SNEAKY-LOAD from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/sneaky-load.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :BIGNUM-EXTRACT from book /home/ecelrc/students/mtemel/acl2/books/std/bitsets/bignum-extract-opt.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :SWAP-ELAB-MODS from book /home/ecelrc/students/mtemel/acl2/books/centaur/sv/mods/moddb.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-OPTIMIZE from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/print.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-OPTIMIZE from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/echars.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :CW-UNFORMATTED from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/cw-unformatted.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :OPEN-OUTPUT-CHANNEL! from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/print.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :MEMORY-MGMT from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/memory-mgmt.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-GC from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/gc.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+
+TTAG NOTE (for included book): Adding ttag :OSLIB from book /home/ecelrc/students/mtemel/acl2/books/oslib/date.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/sv/top" ...):  The
+ttag note just printed to the terminal indicates a modification to
+ACL2.  To avoid this warning, supply an explicit :TTAGS argument when
+including the book "/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top".
+
+Note (from clause-processors/equality): disabling DISJOIN, DISJOIN2,
+CONJOIN and CONJOIN2.
+
+
+
+;;; Starting full GC,     602,931,200 bytes allocated.
+;;; Finished full GC.      85,560,112 bytes freed in 1.312047 s
+
+;;; 108912 soft faults, 0 faults, 0 pageins
+
+
+Summary
+Form:  ( INCLUDE-BOOK "centaur/sv/top" ...)
+Rules: NIL
+Warnings:  Ttags
+Time:  61.47 seconds (prove: 0.00, print: 0.10, other: 61.37)
+"/home/ecelrc/students/mtemel/acl2/books/centaur/sv/top.lisp"
+
+TTAG NOTE (for included book): Adding ttag :VL-OPTIMIZE from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/print.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-OPTIMIZE from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/preprocessor/top.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-OPTIMIZE from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/echars.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+TTAG NOTE (for included book): Adding ttag :CW-UNFORMATTED from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/cw-unformatted.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+TTAG NOTE (for included book): Adding ttag :OPEN-OUTPUT-CHANNEL! from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/print.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+TTAG NOTE (for included book): Adding ttag :FAST-CAT from book /home/ecelrc/students/mtemel/acl2/books/std/strings/fast-cat.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+TTAG NOTE (for included book): Adding ttag :MEMORY-MGMT from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/memory-mgmt.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+TTAG NOTE (for included book): Adding ttag :VL-GC from book /home/ecelrc/students/mtemel/acl2/books/centaur/vl/util/gc.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/vl/loader/top" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top".
+
+
+
+;;; Starting full GC,   2,148,139,008 bytes allocated.
+;;; Finished full GC.   1,367,397,120 bytes freed in 2.109970 s
+
+;;; 94891 soft faults, 0 faults, 0 pageins
+
+
+Summary
+Form:  ( INCLUDE-BOOK "centaur/vl/loader/top" ...)
+Rules: NIL
+Warnings:  Ttags
+Time:  23.74 seconds (prove: 0.00, print: 0.01, other: 23.72)
+"/home/ecelrc/students/mtemel/acl2/books/centaur/vl/loader/top.lisp"
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/cl-fad.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "oslib/ls" ...):  The ttag note
+just printed to the terminal indicates a modification to ACL2.  To
+avoid this warning, supply an explicit :TTAGS argument when including
+the book "/home/ecelrc/students/mtemel/acl2/books/oslib/ls".
+
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/base.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "oslib/ls" ...):  The ttag note
+just printed to the terminal indicates a modification to ACL2.  To
+avoid this warning, supply an explicit :TTAGS argument when including
+the book "/home/ecelrc/students/mtemel/acl2/books/oslib/ls".
+
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/uiop.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "oslib/ls" ...):  The ttag note
+just printed to the terminal indicates a modification to ACL2.  To
+avoid this warning, supply an explicit :TTAGS argument when including
+the book "/home/ecelrc/students/mtemel/acl2/books/oslib/ls".
+
+
+TTAG NOTE (for included book): Adding ttag :OSLIB from book /home/ecelrc/students/mtemel/acl2/books/oslib/ls.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "oslib/ls" ...):  The ttag note
+just printed to the terminal indicates a modification to ACL2.  To
+avoid this warning, supply an explicit :TTAGS argument when including
+the book "/home/ecelrc/students/mtemel/acl2/books/oslib/ls".
+
+
+TTAG NOTE (for included book): Adding ttag :OSLIB from book /home/ecelrc/students/mtemel/acl2/books/oslib/file-types.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "oslib/ls" ...):  The ttag note
+just printed to the terminal indicates a modification to ACL2.  To
+avoid this warning, supply an explicit :TTAGS argument when including
+the book "/home/ecelrc/students/mtemel/acl2/books/oslib/ls".
+
+
+TTAG NOTE (for included book): Adding ttag :OSLIB from book /home/ecelrc/students/mtemel/acl2/books/oslib/dirname.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "oslib/ls" ...):  The ttag note
+just printed to the terminal indicates a modification to ACL2.  To
+avoid this warning, supply an explicit :TTAGS argument when including
+the book "/home/ecelrc/students/mtemel/acl2/books/oslib/ls".
+
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP.OSICAT from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/osicat.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "oslib/ls" ...):  The ttag note
+just printed to the terminal indicates a modification to ACL2.  To
+avoid this warning, supply an explicit :TTAGS argument when including
+the book "/home/ecelrc/students/mtemel/acl2/books/oslib/ls".
+
+; Warning: compiling #<STATIC-FILE "uiop" "contrib/debug.lisp"> completed without its input file #P"/home/ecelrc/students/mtemel/acl2/books/quicklisp/bundle/software/uiop-3.3.2/contrib/debug.lisp"
+; While executing: #<STANDARD-METHOD ASDF/ACTION:COMPUTE-ACTION-STAMP (T ASDF/OPERATION:OPERATION ASDF/COMPONENT:COMPONENT)>, in process listener(1).
+; Warning: loading #<STATIC-FILE "uiop" "contrib/debug.lisp"> completed without its input file #P"/home/ecelrc/students/mtemel/acl2/books/quicklisp/bundle/software/uiop-3.3.2/contrib/debug.lisp"
+; While executing: #<STANDARD-METHOD ASDF/ACTION:COMPUTE-ACTION-STAMP (T ASDF/OPERATION:OPERATION ASDF/COMPONENT:COMPONENT)>, in process listener(1).
+
+Summary
+Form:  ( INCLUDE-BOOK "oslib/ls" ...)
+Rules: NIL
+Warnings:  Ttags
+Time:  2.35 seconds (prove: 0.00, print: 0.00, other: 2.35)
+"/home/ecelrc/students/mtemel/acl2/books/oslib/ls.lisp"
+
+Summary
+Form:  ( INCLUDE-BOOK "centaur/svl/top" ...)
+Rules: NIL
+Time:  7.14 seconds (prove: 0.00, print: 0.01, other: 7.13)
+"/home/ecelrc/students/mtemel/acl2/books/centaur/svl/top.lisp"
+NIL
+
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/gl" ...)
+Rules: NIL
+Time:  10.26 seconds (prove: 0.00, print: 0.01, other: 10.26)
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/gl.lisp"
+
+Summary
+Form:  ( INCLUDE-BOOK "centaur/misc/memory-mgmt" ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:REDUNDANT
+
+Summary
+Form:  ( TABLE HONS ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:REDUNDANT
+NIL
+NIL
+
+TTAG NOTE (for included book): Adding ttag :FAST-CONS-MEMO from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/fast-cons-memo.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :AIG-VARS from book /home/ecelrc/students/mtemel/acl2/books/centaur/aig/aig-vars-fast.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :OSLIB from book /home/ecelrc/students/mtemel/acl2/books/oslib/getpid.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/base.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP.SHELLPOOL from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/shellpool.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :TSHELL from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/tshell.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :SATLINK from book /home/ecelrc/students/mtemel/acl2/books/centaur/satlink/top.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+Summary
+Form:  ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...)
+Rules: NIL
+Warnings:  Ttags
+Time:  10.05 seconds (prove: 0.00, print: 0.01, other: 10.04)
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink.lisp"
+
+Summary
+Form:  ( DEFUN MY-SATLINK-CONFIG ...)
+Rules: ((:EXECUTABLE-COUNTERPART BOOLEANP)
+        (:TYPE-PRESCRIPTION SATLINK::CONFIG)
+        (:TYPE-PRESCRIPTION SATLINK::CONSP-OF-CONFIG))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+MY-SATLINK-CONFIG
+
+Summary
+Form:  ( DEFATTACH GL::GL-SATLINK-CONFIG MY-SATLINK-CONFIG)
+Rules: ((:EXECUTABLE-COUNTERPART SATLINK::CONFIG-P)
+        (:EXECUTABLE-COUNTERPART MY-SATLINK-CONFIG))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Prover steps counted:  2
+:ATTACHMENTS-RECORDED
+
+Summary
+Form:  ( PROGN (DEFUN MY-SATLINK-CONFIG ...) ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+Prover steps counted:  2
+:ATTACHMENTS-RECORDED
+
+Summary
+Form:  ( DEFATTACH GL::BFR-MODE GL::BFR-AIG)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:ATTACHMENTS-RECORDED
+
+Summary
+Form:  ( DEFATTACH GL::BFR-COUNTEREX-MODE GL::BFR-COUNTEREX-ALIST)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+:ATTACHMENTS-RECORDED
+Subgoal 2
+Subgoal 2.4
+Subgoal 2.3
+Subgoal 2.2
+Subgoal 2.1
+Subgoal 1
+Subgoal 1'
+Subgoal 1''
+
+Summary
+Form:  ( DEFATTACH (GL::BFR-SAT GL::BFR-SATLINK) ...)
+Rules: ((:DEFINITION BFR-EVAL)
+        (:DEFINITION GL::BFR-SATLINK)
+        (:DEFINITION MV-NTH)
+        (:DEFINITION NOT)
+        (:EXECUTABLE-COUNTERPART BINARY-+)
+        (:EXECUTABLE-COUNTERPART EQUAL)
+        (:EXECUTABLE-COUNTERPART LEN)
+        (:EXECUTABLE-COUNTERPART NOT)
+        (:EXECUTABLE-COUNTERPART TAU-SYSTEM)
+        (:REWRITE AIG-SAT-WHEN-UNSAT)
+        (:REWRITE RP::LEN-CONS)
+        (:TYPE-PRESCRIPTION AIG-EVAL))
+Time:  0.29 seconds (prove: 0.25, print: 0.00, other: 0.04)
+Prover steps counted:  497
+:ATTACHMENTS-RECORDED
+
+Summary
+Form:  ( DEFATTACH (GL::BFR-VACUITY-CHECK GL::BFR-SAT) ...)
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+:ATTACHMENTS-RECORDED
+
+Summary
+Form:  ( DEFATTACH (AIGNET::AIG->CNF-AIGNET-TRANSFORM 
+AIGNET::AIG->CNF-DEFAULT-AIGNET-TRANSFORM))
+Rules: ((:TYPE-PRESCRIPTION AIGNET::AIGNETP))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+:ATTACHMENTS-RECORDED
+
+Summary
+Form:  ( PROGN (DEFATTACH ... GL::BFR-AIG) ...)
+Rules: NIL
+Time:  0.32 seconds (prove: 0.25, print: 0.00, other: 0.06)
+Prover steps counted:  497
+:ATTACHMENTS-RECORDED
+NIL
+
+Summary
+Form:  ( PROGN (INCLUDE-BOOK "centaur/gl/gl" ...) ...)
+Rules: NIL
+Warnings:  Ttags
+Time:  20.79 seconds (prove: 0.25, print: 0.02, other: 20.52)
+Prover steps counted:  499
+NIL
+
+Summary
+Form:  ( DEFCONST *RCA/CLA-IN-PATTERN* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA/CLA-IN-PATTERN*
+
+Summary
+Form:  ( DEFCONST *RCA/CLA-OUT-PATTERN* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA/CLA-OUT-PATTERN*
+
+Summary
+Form:  ( TABLE HONS ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+HONS
+
+Summary
+Form:  ( DEFUN TO_VECTOR ...)
+Rules: ((:TYPE-PRESCRIPTION STR::FAST-STRING-APPEND))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+TO_VECTOR
+{    0B} rca.v
+{  974B} loadreg.v
+{  1.1K} adder.v
+Included files report:
+  - Bytes read due to includes: 0
+  - Bytes saved due to multi-include optimization: 0
+  - MI stats: 0 hits, 0 misses (including first-time reads).
+Details:
+   NIL
+
+Input file statistics:
+  - Unique files: 3
+  - Number of files read: 3
+  - Total bytes read: 1324
+Details:
+   
+((:FROMDISK 974
+            :READS 1
+            :SIZE 974
+            :FILE "rca.v")
+ (:FROMDISK 185
+            :READS 1
+            :SIZE 185
+            :FILE "loadreg.v")
+ (:FROMDISK 165
+            :READS 1
+            :SIZE 165
+            :FILE "adder.v"))
+
+
+
+;;; Starting full GC,   2,355,625,984 bytes allocated.
+;;; Finished full GC.   1,292,173,392 bytes freed in 2.892071 s
+
+;;; 327779 soft faults, 0 faults, 0 pageins
+
+Load Summary: - 3 modules.
+ - 0 interfaces.
+ - 0 packages.
+ - 0 programs.
+ - 0 configs.
+ - 0 user-defined primitives.
+; (DEFCONSTS (*RCA-VL* ...) ...): 2.93 seconds, 383,568 bytes
+
+Summary
+Form:  ( DEFCONST *RCA-VL* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA-VL*
+
+Summary
+Form:  ( PROGN (DEFCONST *RCA-VL* ...) ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (PROG2$ ...))
+Rules: NIL
+Time:  2.93 seconds (prove: 0.00, print: 0.00, other: 2.93)
+*RCA-VL*
+; VL::VL-ANNOTATE-DESIGN: 0.00 seconds, 113,536 bytes.
+; VL::VL-DESIGN-ADDNAMES: 0.00 seconds, 15,872 bytes.
+; VL::VL-REMOVE-UNNECESSARY-ELEMENTS: 0.00 seconds, 23,456 bytes.
+Simplifying 3 modules.
+; VL::VL-SIMPLIFY-SV: 0.00 seconds, 84,064 bytes.
+
+--- VL->SV Translation Report -------------------------------------------------
+-------------------------------------------------------------------------------
+
+; (DEFCONSTS (*RCA-SV* ...) ...): 0.01 seconds, 599,776 bytes
+
+Summary
+Form:  ( DEFCONST *RCA-SV* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA-SV*
+
+Summary
+Form:  ( DEFCONST *RCA-SIMPLIFIED-GOOD* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA-SIMPLIFIED-GOOD*
+
+Summary
+Form:  ( DEFCONST *RCA-SIMPLIFIED-BAD* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA-SIMPLIFIED-BAD*
+
+Summary
+Form:  ( PROGN (DEFCONST *RCA-SV* ...) ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (PROG2$ ...))
+Rules: NIL
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+*RCA-SIMPLIFIED-BAD*
+
+Summary
+Form:  ( PROGN (DEFCONSTS ...) ...)
+Rules: NIL
+Time:  2.95 seconds (prove: 0.00, print: 0.00, other: 2.95)
+*RCA-SIMPLIFIED-BAD*
+Starting to flatten modules and create SVL design... 
+Now working on mod: "loadreg" 
+Processing alias-pairs... Creating occs... Sorting occs... Done! 
+ 
+Now working on mod: "adder" 
+Processing alias-pairs... Creating occs... Sorting occs... Done! 
+ 
+Now working on mod: "rca" 
+Processing alias-pairs... Creating occs... Sorting occs... Done! 
+ 
+Inserting ranks to unflattened modules... 
+All done! 
+; (DEFCONSTS (*RCA-SVL* ...) ...): 0.01 seconds, 933,680 bytes
+
+Summary
+Form:  ( DEFCONST *RCA-SVL* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA-SVL*
+
+Summary
+Form:  ( PROGN (DEFCONST *RCA-SVL* ...) ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (PROG2$ ...))
+Rules: NIL
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+*RCA-SVL*
+; SV::LHSARR-TO-SVEXARR: 0.00 seconds, 2,064 bytes.
+; SV::ASSIGNS-SUBST: 0.00 seconds, 16,768 bytes.
+; SV::ASSIGNS-SUBST: 0.00 seconds, 0 bytes.
+; SV::CONSTRAINTLIST-SUBST-FROM-SVEXARR: 0.00 seconds, 0 bytes.
+; SV::ASSIGNS->NETASSIGNS: 0.00 seconds, 2,992 bytes.
+; SV::NETASSIGNS->RESOLVES: 0.00 seconds, 832 bytes.
+Initial count: 91
+opcount before rewrite: 91 multiply-referenced: 13
+; SV::SVEXLIST-OPCOUNT: 0.00 seconds, 3,456 bytes.
+opcount after rewrite: 54
+; SV::SVEXLIST-REWRITE-TOP: 0.00 seconds, 101,472 bytes.
+Count after initial rewrite: 54
+Updates count: 54
+opcount before rewrite: 54 multiply-referenced: 14
+; SV::SVEXLIST-OPCOUNT: 0.00 seconds, 3,424 bytes.
+opcount after rewrite: 53
+; SV::SVEXLIST-REWRITE-TOP: 0.00 seconds, 60,080 bytes.
+Updates count after rewrite: 53
+; SV::SVEXLIST-OPCOUNT: 0.00 seconds, 0 bytes.
+Looping subset count: 0
+Mask bits count (starting): 22
+Loop variable count: 0
+Mask bits count: NIL
+; SV::SVEXLIST-TOPOSORT: 0.00 seconds, 0 bytes.
+; SV::SVEXLIST-COMPUTE-MASKS: 0.00 seconds, 0 bytes.
+; SV::SVEX-MASK-ALIST-EXPAND: 0.00 seconds, 2,912 bytes.
+; SV::SVEXLIST-REWRITE-UNDER-MASKS: 0.00 seconds, 96 bytes.
+; SV::SVEXLIST-OPCOUNT: 0.00 seconds, 0 bytes.
+Masked updates count: 0
+; SV::SVEXLIST-TOPOSORT: 0.00 seconds, 0 bytes.
+; SV::SVEXLIST-COMPUTE-MASKS: 0.00 seconds, 0 bytes.
+; SV::SVEX-MASK-ALIST-EXPAND: 0.00 seconds, 2,912 bytes.
+; SV::SVEXLIST-MASKS-MEASURE: 0.00 seconds, 0 bytes.
+mask count reached 0
+0 loop vars
+; SV::SVEX-MASK-ALIST-COMPOSE-BIT-SCCS: 0.00 seconds, 32 bytes.
+opcount before rewrite: 591 multiply-referenced: 148
+; SV::SVEXLIST-OPCOUNT: 0.00 seconds, 6,480 bytes.
+opcount after rewrite: 78
+opcount before rewrite: 78 multiply-referenced: 19
+; SV::SVEXLIST-OPCOUNT: 0.00 seconds, 6,480 bytes.
+opcount after rewrite: 78
+opcount before norm-concats: 78
+opcount after norm-concats: 78
+
+Summary
+Form:  ( DEFCONST *RCA-SVTV* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA-SVTV*
+
+Summary
+Form:  ( DEFCONST *RCA-SVTV-MOD* ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+*RCA-SVTV-MOD*
+
+Summary
+Form:  ( DEFUN RCA-SVTV-MOD ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+(:DEFUND RCA-SVTV-MOD)
+
+Summary
+Form:  ( DEFUN RCA-SVTV ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( DEFTHM SVTV-P-OF-RCA-SVTV ...)
+Rules: ((:COMPOUND-RECOGNIZER CONSP-WHEN-SVTV-P)
+        (:EXECUTABLE-COUNTERPART RCA-SVTV)
+        (:EXECUTABLE-COUNTERPART SVTV-P)
+        (:TYPE-PRESCRIPTION SVTV-P))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Prover steps counted:  4
+SVTV-P-OF-RCA-SVTV
+
+Summary
+Form:  ( PROGN (DEFTHM SVTV-P-OF-RCA-SVTV ...) ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Prover steps counted:  4
+
+Summary
+Form:  ( DEFTHM SVTV->OUTS-OF-RCA-SVTV ...)
+Rules: ((:EXECUTABLE-COUNTERPART EQUAL)
+        (:EXECUTABLE-COUNTERPART RCA-SVTV)
+        (:EXECUTABLE-COUNTERPART SVTV->OUTS))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Prover steps counted:  4
+SVTV->OUTS-OF-RCA-SVTV
+
+Summary
+Form:  ( DEFTHM SVTV->INS-OF-RCA-SVTV ...)
+Rules: ((:EXECUTABLE-COUNTERPART EQUAL)
+        (:EXECUTABLE-COUNTERPART RCA-SVTV)
+        (:EXECUTABLE-COUNTERPART SVTV->INS))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+Prover steps counted:  4
+SVTV->INS-OF-RCA-SVTV
+
+Summary
+Form:  ( IN-THEORY (DISABLE ...))
+Rules: NIL
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+(:NUMBER-OF-ENABLED-RUNES 122989)
+
+Summary
+Form:  ( TABLE RULESET-TABLE ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (LET* ...))
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RULESET-TABLE
+
+Summary
+Form:  ( PROGN (DEFTHM SVTV->OUTS-OF-RCA-SVTV ...) ...)
+Rules: NIL
+Time:  0.02 seconds (prove: 0.00, print: 0.00, other: 0.02)
+Prover steps counted:  8
+RCA-SVTV
+
+Summary
+Form:  ( DEFMACRO RCA-SVTV-AUTOHYPS ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( DEFUN RCA-SVTV-AUTOHYPS-FN ...)
+Rules: ((:TYPE-PRESCRIPTION UNSIGNED-BYTE-P))
+Time:  0.01 seconds (prove: 0.00, print: 0.00, other: 0.01)
+RCA-SVTV-AUTOHYPS
+
+Summary
+Form:  ( DEFMACRO RCA-SVTV-AUTOHYPS-BODY ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RCA-SVTV-AUTOHYPS-BODY
+Goal'
+
+Summary
+Form:  ( DEFUN RCA-SVTV-ALIST-AUTOHYPS ...)
+Rules: ((:EXECUTABLE-COUNTERPART EQLABLEP)
+        (:FAKE-RUNE-FOR-TYPE-SET NIL)
+        (:REWRITE ASSOC-EQL-EXEC-IS-ASSOC-EQUAL)
+        (:REWRITE SV::CONSP-OF-ASSOC-WHEN-ALISTP)
+        (:TYPE-PRESCRIPTION RCA-SVTV-AUTOHYPS-FN))
+Time:  0.04 seconds (prove: 0.01, print: 0.01, other: 0.02)
+Prover steps counted:  691
+RCA-SVTV-ALIST-AUTOHYPS
+
+Summary
+Form:  ( TABLE RULESET-TABLE ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (LET* ...))
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RULESET-TABLE
+
+Summary
+Form:  ( TABLE RULESET-TABLE ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (LET* ...))
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RULESET-TABLE
+
+Summary
+Form:  ( TABLE RULESET-TABLE ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (LET* ...))
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RULESET-TABLE
+
+Summary
+Form:  ( TABLE RULESET-TABLE ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (LET* ...))
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RULESET-TABLE
+
+Summary
+Form:  ( DEFMACRO RCA-SVTV-AUTOINS ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( DEFUN RCA-SVTV-AUTOINS-FN ...)
+Rules: ((:FAKE-RUNE-FOR-TYPE-SET NIL))
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RCA-SVTV-AUTOINS
+Subgoal 7
+Subgoal 7'
+Subgoal 6
+Subgoal 6'
+Subgoal 5
+Subgoal 5'
+Subgoal 4
+Subgoal 4'
+Subgoal 3
+Subgoal 3'
+Subgoal 2
+Subgoal 2'
+Subgoal 1
+Subgoal 1'
+
+Summary
+Form:  ( DEFTHM RCA-SVTV-AUTOINS-LOOKUP ...)
+Rules: ((:DEFINITION RCA-SVTV-AUTOINS-FN)
+        (:DEFINITION RETURN-LAST)
+        (:DEFINITION SYNP)
+        (:FAKE-RUNE-FOR-TYPE-SET NIL)
+        (:REWRITE SV::ASSOC-OF-ACONS)
+        (:REWRITE SV::ASSOC-OF-NIL))
+Time:  0.04 seconds (prove: 0.03, print: 0.00, other: 0.00)
+Prover steps counted:  1923
+RCA-SVTV-AUTOINS-LOOKUP
+
+Summary
+Form:  ( DEFMACRO RCA-SVTV-AUTOINS-BODY ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RCA-SVTV-AUTOINS-BODY
+Goal'
+
+Summary
+Form:  ( DEFUN RCA-SVTV-ALIST-AUTOINS ...)
+Rules: ((:EXECUTABLE-COUNTERPART EQLABLEP)
+        (:FAKE-RUNE-FOR-TYPE-SET NIL)
+        (:REWRITE ASSOC-EQL-EXEC-IS-ASSOC-EQUAL)
+        (:REWRITE SV::CONSP-OF-ASSOC-WHEN-ALISTP)
+        (:TYPE-PRESCRIPTION RCA-SVTV-AUTOINS-FN))
+Time:  0.03 seconds (prove: 0.01, print: 0.02, other: 0.01)
+Prover steps counted:  691
+RCA-SVTV-ALIST-AUTOINS
+
+Summary
+Form:  ( TABLE RULESET-TABLE ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (LET* ...))
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RULESET-TABLE
+
+Summary
+Form:  ( TABLE RULESET-TABLE ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+
+Summary
+Form:  ( MAKE-EVENT (LET* ...))
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RULESET-TABLE
+Goal'
+
+Summary
+Form:  ( DEFTHM RCA-SVTV-ALIST-AUTOINS-IDEMPOTENT ...)
+Rules: ((:DEFINITION RCA-SVTV-ALIST-AUTOINS)
+        (:DEFINITION RCA-SVTV-AUTOINS-FN)
+        (:FAKE-RUNE-FOR-TYPE-SET NIL)
+        (:REWRITE SV::ASSOC-OF-ACONS)
+        (:REWRITE CDR-CONS))
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.00)
+Prover steps counted:  924
+RCA-SVTV-ALIST-AUTOINS-IDEMPOTENT
+Goal'
+
+Summary
+Form:  ( DEFTHM RCA-SVTV-ALIST-AUTOINS-LOOKUP ...)
+Rules: ((:DEFINITION MEMBER-EQUAL)
+        (:DEFINITION RCA-SVTV-ALIST-AUTOINS)
+        (:DEFINITION RCA-SVTV-AUTOINS-FN)
+        (:DEFINITION RETURN-LAST)
+        (:EXECUTABLE-COUNTERPART SVTV->INS)
+        (:FAKE-RUNE-FOR-TYPE-SET NIL)
+        (:REWRITE SV::ASSOC-OF-ACONS)
+        (:REWRITE SV::ASSOC-OF-NIL))
+Time:  0.02 seconds (prove: 0.01, print: 0.00, other: 0.01)
+Prover steps counted:  490
+RCA-SVTV-ALIST-AUTOINS-LOOKUP
+Goal'
+
+Summary
+Form:  ( DEFTHM RCA-SVTV-ALIST-AUTOHYPS-OF-AUTOINS ...)
+Rules: ((:DEFINITION RCA-SVTV-ALIST-AUTOHYPS)
+        (:DEFINITION RCA-SVTV-ALIST-AUTOINS)
+        (:DEFINITION RCA-SVTV-AUTOINS-FN)
+        (:FAKE-RUNE-FOR-TYPE-SET NIL)
+        (:REWRITE SV::ASSOC-OF-ACONS)
+        (:REWRITE CDR-CONS))
+Time:  0.01 seconds (prove: 0.01, print: 0.00, other: 0.01)
+Prover steps counted:  786
+RCA-SVTV-ALIST-AUTOHYPS-OF-AUTOINS
+
+Summary
+Form:  ( DEFMACRO RCA-SVTV-AUTOBINDS ...)
+Rules: NIL
+Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+RCA-SVTV-AUTOBINDS
+
+Summary
+Form:  ( PROGN (DEFCONST *RCA-SVTV* ...) ...)
+Rules: NIL
+Time:  0.47 seconds (prove: 0.07, print: 0.03, other: 0.36)
+Prover steps counted:  5517
+
+Summary
+Form:  ( MAKE-EVENT (SV::DEFSVTV-FN ...))
+Rules: NIL
+Time:  0.49 seconds (prove: 0.07, print: 0.03, other: 0.38)
+Prover steps counted:  5517
+RCA-SVTV-AUTOBINDS
+"Testing the RCA module... "
+c
+c This is glucose 4.0 --  based on MiniSAT (Many thanks to MiniSAT team)
+c
+c ========================================[ Problem Statistics ]===========================================
+c |                                                                                                       |
+c |  Number of variables:             8                                                                   |
+c |  Number of clauses:               0                                                                   |
+c |  Parse time:                   0.00 s                                                                 |
+c |                                                                                                       |
+c | Preprocesing is fully done
+c |  Eliminated clauses:           0.00 Mb                                                                |
+c |  Simplification time:          0.00 s                                                                 |
+c |                                                                                                       |
+c ========================================[ MAGIC CONSTANTS ]==============================================
+c | Constants are supposed to work well together :-)                                                      |
+c | however, if you find better choices, please let us known...                                           |
+c |-------------------------------------------------------------------------------------------------------|
+c | Adapt dynamically the solver after 100000 conflicts (restarts, reduction strategies...)               |
+c |-------------------------------------------------------------------------------------------------------|
+c |                                |                                |                                     |
+c | - Restarts:                    | - Reduce Clause DB:            | - Minimize Asserting:               |
+c |   * LBD Queue    :     50      |   * First     :   2000         |    * size <  30                     |
+c |   * Trail  Queue :   5000      |   * Inc       :    300         |    * lbd  <   6                     |
+c |   * K            :   0.80      |   * Special   :   1000         |                                     |
+c |   * R            :   1.40      |   * Protected :  (lbd)< 30     |                                     |
+c |                                |                                |                                     |
+c ==================================[ Search Statistics (every  10000 conflicts) ]=========================
+c |                                                                                                       |
+c |          RESTARTS           |          ORIGINAL         |              LEARNT              | Progress |
+c |       NB   Blocked  Avg Cfc |    Vars  Clauses Literals |   Red   Learnts    LBD2  Removed |          |
+c =========================================================================================================
+c last restart ## conflicts  :  0 0
+c =========================================================================================================
+c restarts              : 1 (0 conflicts in avg)
+c blocked restarts      : 0 (multiple: 0)
+c last block at restart : 0
+c nb ReduceDB           : 0
+c nb removed Clauses    : 0
+c nb learnts DL2        : 0
+c nb learnts size 2     : 0
+c nb learnts size 1     : 0
+c conflicts             : 0              (0 /sec)
+c decisions             : 1              (0.00 % random) (1091 /sec)
+c propagations          : 7              (7634 /sec)
+c nb reduced Clauses    : 0
+c CPU time              : 0.000917 s
+
+s SATISFIABLE
+; svex->aigs: 0.00 sec, 69,024 bytes.
+; env -> aig env: 0.00 sec, 162,512 bytes.
+; SV bit-blasting: a4veclist->aiglist: 0.00 sec, 2,752 bytes.
+; SV bit-blasting: aig-eval-list: 0.31 sec, 32,947,456 bytes.
+; bits->4vecs: 0.00 sec, 221,440 bytes.
+c
+c This is glucose 4.0 --  based on MiniSAT (Many thanks to MiniSAT team)
+c
+c ========================================[ Problem Statistics ]===========================================
+c |                                                                                                       |
+c |  Number of variables:           110                                                                   |
+c |  Number of clauses:             315                                                                   |
+c |  Parse time:                   0.00 s                                                                 |
+c |                                                                                                       |
+c | Preprocesing is fully done
+c |  Eliminated clauses:           0.00 Mb                                                                |
+c |  Simplification time:          0.00 s                                                                 |
+c |                                                                                                       |
+c ========================================[ MAGIC CONSTANTS ]==============================================
+c | Constants are supposed to work well together :-)                                                      |
+c | however, if you find better choices, please let us known...                                           |
+c |-------------------------------------------------------------------------------------------------------|
+c | Adapt dynamically the solver after 100000 conflicts (restarts, reduction strategies...)               |
+c |-------------------------------------------------------------------------------------------------------|
+c |                                |                                |                                     |
+c | - Restarts:                    | - Reduce Clause DB:            | - Minimize Asserting:               |
+c |   * LBD Queue    :     50      |   * First     :   2000         |    * size <  30                     |
+c |   * Trail  Queue :   5000      |   * Inc       :    300         |    * lbd  <   6                     |
+c |   * K            :   0.80      |   * Special   :   1000         |                                     |
+c |   * R            :   1.40      |   * Protected :  (lbd)< 30     |                                     |
+c |                                |                                |                                     |
+c ==================================[ Search Statistics (every  10000 conflicts) ]=========================
+c |                                                                                                       |
+c |          RESTARTS           |          ORIGINAL         |              LEARNT              | Progress |
+c |       NB   Blocked  Avg Cfc |    Vars  Clauses Literals |   Red   Learnts    LBD2  Removed |          |
+c =========================================================================================================
+c =========================================================================================================
+c restarts              : 1 (142 conflicts in avg)
+c blocked restarts      : 0 (multiple: 0)
+c last block at restart : 0
+c nb ReduceDB           : 0
+c nb removed Clauses    : 0
+c nb learnts DL2        : 26
+c nb learnts size 2     : 21
+c nb learnts size 1     : 6
+c conflicts             : 142            (69472 /sec)
+c decisions             : 217            (0.00 % random) (106164 /sec)
+c propagations          : 1385           (677593 /sec)
+c nb reduced Clauses    : 1
+c CPU time              : 0.002044 s
+
+s UNSATISFIABLE
+Subgoal 5
+Subgoal 4
+Subgoal 3
+Subgoal 2
+Subgoal 2'
+Subgoal 2''
+Subgoal 1
+Subgoal 1'
+
+Summary
+Form:  ( DEFTHM LAB5-PARTA-TEST ...)
+Rules: ((:DEFINITION INTEGER-RANGE-P)
+        (:DEFINITION UNSIGNED-BYTE-P)
+        (:EXECUTABLE-COUNTERPART BINARY-+)
+        (:EXECUTABLE-COUNTERPART EXPT)
+        (:EXECUTABLE-COUNTERPART INTEGERP)
+        (:EXECUTABLE-COUNTERPART LEN)
+        (:EXECUTABLE-COUNTERPART UNARY--)
+        (:FAKE-RUNE-FOR-LINEAR NIL)
+        (:FAKE-RUNE-FOR-TYPE-SET NIL)
+        (:REWRITE GL::SHAPE-SPEC-OBJ-IN-RANGE-BACKCHAIN-INTEGER-1)
+        (:TYPE-PRESCRIPTION UNSIGNED-BYTE-P))
+Hint-events: ((:BY LOGCDR-FOR-GL)
+              (:CLAUSE-PROCESSOR GL::GLCP)
+              (:CLAUSE-PROCESSOR REMOVE-FIRST-HYP-CP))
+Time:  0.46 seconds (prove: 0.46, print: 0.00, other: 0.00)
+Prover steps counted:  430
+GL::OK
+
+Summary
+Form:  ( PROGN (PROGN ...) ...)
+Rules: NIL
+Time:  3.92 seconds (prove: 0.53, print: 0.03, other: 3.36)
+Prover steps counted:  5947
+GL::OK
+
+TTAG NOTE (for included book): Adding ttag :FAST-CONS-MEMO from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/fast-cons-memo.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :AIG-VARS from book /home/ecelrc/students/mtemel/acl2/books/centaur/aig/aig-vars-fast.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :OSLIB from book /home/ecelrc/students/mtemel/acl2/books/oslib/getpid.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/base.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :QUICKLISP.SHELLPOOL from book /home/ecelrc/students/mtemel/acl2/books/quicklisp/shellpool.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :TSHELL from book /home/ecelrc/students/mtemel/acl2/books/centaur/misc/tshell.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+TTAG NOTE (for included book): Adding ttag :SATLINK from book /home/ecelrc/students/mtemel/acl2/books/centaur/satlink/top.
+
+ACL2 Warning [Ttags] in ( INCLUDE-BOOK "centaur/gl/bfr-satlink" ...):
+The ttag note just printed to the terminal indicates a modification
+to ACL2.  To avoid this warning, supply an explicit :TTAGS argument
+when including the book 
+"/home/ecelrc/students/mtemel/acl2/books/centaur/gl/bfr-satlink".
+
+
+Summary
+Form:  ( INCLUDE-BOOK "lab5test-a" ...)
+Rules: NIL
+Warnings:  Ttags
+Time:  19.81 seconds (prove: 0.00, print: 0.02, other: 19.79)
+
+
+
+Summary
+Form:  (CERTIFY-BOOK "lab5test-a" ...)
+Rules: NIL
+Warnings:  Ttags
+Time:  140.11 seconds (prove: 0.78, print: 0.19, other: 139.14)
+Prover steps counted:  6446
+; (EV-REC *RETURN-LAST-ARG3* ...) took 
+; 140.11 seconds realtime, 137.18 seconds runtime
+; (6,088,318,608 bytes allocated).
+
+Sorted by *memoize-summary-order-list* = (TOTAL-TIME NUMBER-OF-CALLS).
+(CERTIFY-BOOK-FN
+ Calls                                                                        1
+ Time of all outermost calls                                             139.98
+ Time per call                                                           139.98
+ Heap bytes allocated                                            6.09E+9; 98.9%
+ Heap bytes allocated per call                                          6.09E+9
+ Pons calls                                                      5.00E+4; 49.9%
+ To self/unprofiled functions                                    1.39E+2; 99.4%
+ To other functions                           9.70E+4 calls took 8.21E-1;  0.6%
+ From other functions                        1.00E+0 calls took 1.40E+2; 100.0%)
+(PROVE
+ Calls                                                                  9.43E+4
+ Time of all outermost calls                                               0.81
+ Time per call                                                          8.63E-6
+ Heap bytes allocated                                            6.47E+7;  1.1%
+ Heap bytes allocated per call                                           686.11
+ Pons calls                                                      4.67E+4; 46.6%
+ To self/unprofiled functions                                    7.67E-1; 94.3%
+ To GL::FN-REWRITE-RULES                      2.33E+4 calls took 2.17E-2;  2.7%
+ To GL::GOBJECT-HIERARCHY-LITE                1.34E+5 calls took 1.38E-2;  1.7%
+ To GL::GENERAL-CONCRETE-OBJ                  5.05E+4 calls took 9.21E-3;  1.1%
+ To other functions                           3.60E+3 calls took 2.07E-3;  0.3%
+ From CERTIFY-BOOK-FN                         9.29E+4 calls took 8.14E-1; 99.9%
+ From other functions                            1.47E+3 calls took 4.89E-4; ?%)
+(GL::FN-REWRITE-RULES
+ Hits/calls                                            0.00E-1/ 2.33E+4 =  0.0%
+ Time of all outermost calls                                               0.02
+ Time per call                                                          9.28E-7
+ From PROVE                                  2.33E+4 calls took 2.17E-2; 100.0%)
+(GL::GOBJECT-HIERARCHY-LITE
+ Hits/calls                                            0.00E-1/ 1.34E+5 =  0.0%
+ Time of all outermost calls                                               0.01
+ Time per call                                                          1.03E-7
+ From PROVE                                  1.34E+5 calls took 1.38E-2; 100.0%)
+(GL::GENERAL-CONCRETE-OBJ
+ Hits/calls                                            0.00E-1/ 5.05E+4 =  0.0%
+ Time of all outermost calls                                            9.21E-3
+ Time per call                                                          1.83E-7
+ From PROVE                                  5.05E+4 calls took 9.21E-3; 100.0%)
+(SV::SVEX-COMPOSE-SVTV-PHASES-CALL
+ Hits/calls                                            2.22E+2/ 7.83E+2 = 28.4%
+ Time of all outermost calls                                            2.22E-3
+ Time per call                                                          2.84E-6
+ Heap bytes allocated                                            1.17E+5;  0.0%
+ Heap bytes allocated per call                                           149.15
+ Pons calls                                                      1.57E+3;  1.6%
+ Time per missed call                                                   3.96E-6
+ From CERTIFY-BOOK-FN                        1.00E+1 calls took 2.22E-3; 100.0%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(SV::SVEX-S4XEVAL
+ Hits/calls                                            2.06E+3/ 4.03E+3 = 51.2%
+ Time of all outermost calls                                            1.37E-3
+ Time per call                                                          3.40E-7
+ Heap bytes allocated                                            6.40E+4;  0.0%
+ Heap bytes allocated per call                                            15.88
+ Time per missed call                                                   6.97E-7
+ From CERTIFY-BOOK-FN                         2.82E+3 calls took 1.34E-3; 98.1%
+ From SV::SVEXLIST-MASK-ALIST-MEMO               1.34E+2 calls took 2.65E-5; ?%
+ Memoize table count/size                              4.69E+2/ 6.88E+2 = 68.2%)
+(SV::SVEXLIST->A4VECS-FOR-VARLIST
+ Hits/calls                                            0.00E-1/ 1.00E+0 =  0.0%
+ Time of all outermost calls                                            9.68E-4
+ Time per call                                                          9.68E-4
+ Heap bytes allocated                                            5.29E+4;  0.0%
+ Heap bytes allocated per call                                          5.29E+4
+ Pons calls                                                            1;  0.0%
+ To self/unprofiled functions                                    6.60E-4; 68.2%
+ To SV::SVEXLIST-MASK-ALIST-MEMO              1.00E+0 calls took 2.76E-4; 28.6%
+ To SV::3VALUED-SYNTAXP                       1.12E+2 calls took 3.13E-5;  3.2%
+ From PROVE                                      1.00E+0 calls took 9.68E-4; ?%
+ Memoize table count/size                              1.00E+0/ 6.20E+1 =  1.6%
+ (Pons table count/size                                           1/62 =  1.6%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           1))
+(GL::CONCRETE-KEY-ALISTP
+ Hits/calls                                            0.00E-1/ 3.18E+3 =  0.0%
+ Time of all outermost calls                                            6.40E-4
+ Time per call                                                          2.01E-7
+ From PROVE                                      3.18E+3 calls took 6.40E-4; ?%)
+(VL::VL-SCOPE->SCOPEINFO-AUX
+ Hits/calls                                            9.23E+2/ 9.56E+2 = 96.5%
+ Number of calls to mht                                                       2
+ Time of all outermost calls                                            6.02E-4
+ Time per call                                                          6.30E-7
+ Heap bytes allocated                                            4.97E+4;  0.0%
+ Heap bytes allocated per call                                            52.02
+ Pons calls                                                          956;  1.0%
+ Time per missed call                                                   1.83E-5
+ From CERTIFY-BOOK-FN                            8.17E+2 calls took 5.03E-4; ?%
+ From VL::VL-DESIGN-IMMDEPS                      1.39E+2 calls took 9.92E-5; ?%
+ Memoize table count/size                              0.00E-1/ 6.20E+1 =  0.0%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(SV::SVEX-P
+ Hits/calls                                            2.63E+2/ 9.49E+2 = 27.7%
+ Time of all outermost calls                                            3.98E-4
+ Time per call                                                          4.19E-7
+ Heap bytes allocated                                            1.93E+4;  0.0%
+ Heap bytes allocated per call                                            20.33
+ Time per missed call                                                   5.80E-7
+ From CERTIFY-BOOK-FN                            7.40E+1 calls took 2.77E-4; ?%
+ From PROVE                                      3.86E+2 calls took 1.21E-4; ?%
+ Memoize table count/size                              2.20E+2/ 3.07E+2 = 71.7%)
+(SV::SVEX-COMPOSE*
+ Hits/calls                                            6.20E+1/ 2.74E+2 = 22.6%
+ Time of all outermost calls                                            3.42E-4
+ Time per call                                                          1.25E-6
+ Heap bytes allocated                                            1.76E+4;  0.0%
+ Heap bytes allocated per call                                            64.12
+ Pons calls                                                           79;  0.1%
+ Time per missed call                                                   1.61E-6
+ From CERTIFY-BOOK-FN                            3.00E+1 calls took 3.42E-4; ?%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(SV::SVEX-COMPOSE
+ Hits/calls                                            3.40E+1/ 2.69E+2 = 12.6%
+ Number of calls to mht                                                       3
+ Time of all outermost calls                                            3.39E-4
+ Time per call                                                          1.26E-6
+ Heap bytes allocated                                            2.58E+4;  0.0%
+ Heap bytes allocated per call                                               96
+ Pons calls                                                          140;  0.1%
+ Time per missed call                                                   1.44E-6
+ From CERTIFY-BOOK-FN                            2.30E+1 calls took 3.39E-4; ?%
+ Memoize table count/size                              0.00E-1/ 6.20E+1 =  0.0%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(VL::VL-DESIGN-IMMDEPS
+ Hits/calls                                            0.00E-1/ 2.00E+0 =  0.0%
+ Time of all outermost calls                                            3.39E-4
+ Time per call                                                          1.69E-4
+ Heap bytes allocated                                            2.61E+4;  0.0%
+ Heap bytes allocated per call                                          1.31E+4
+ Pons calls                                                          139;  0.1%
+ To self/unprofiled functions                                    2.22E-4; 65.6%
+ To VL::VL-SCOPE->SCOPEINFO-AUX               1.39E+2 calls took 9.92E-5; 29.3%
+ To VL::VL-SCOPE-DEFINITION-ALIST-AUX         2.00E+1 calls took 1.72E-5;  5.1%
+ From CERTIFY-BOOK-FN                            2.00E+0 calls took 3.39E-4; ?%
+ Memoize table count/size                              2.00E+0/ 6.20E+1 =  3.2%)
+(SV::SVEX->ABSINDEXED
+ Hits/calls                                            2.40E+1/ 1.83E+2 = 13.1%
+ Number of calls to mht                                                       2
+ Time of all outermost calls                                            3.27E-4
+ Time per call                                                          1.79E-6
+ Heap bytes allocated                                            1.21E+4;  0.0%
+ Heap bytes allocated per call                                            66.01
+ Pons calls                                                          212;  0.2%
+ Time per missed call                                                   2.06E-6
+ From CERTIFY-BOOK-FN                            1.00E+1 calls took 3.27E-4; ?%
+ Memoize table count/size                              0.00E-1/ 6.20E+1 =  0.0%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(SV::SVEX-SUBST-FROM-SVEXARR
+ Hits/calls                                            2.40E+1/ 1.83E+2 = 13.1%
+ Time of all outermost calls                                            3.25E-4
+ Time per call                                                          1.77E-6
+ Heap bytes allocated                                            1.59E+4;  0.0%
+ Heap bytes allocated per call                                            87.08
+ Pons calls                                                          106;  0.1%
+ Time per missed call                                                   2.04E-6
+ To self/unprofiled functions                                    3.03E-4; 93.4%
+ To SV::SVEX-ADD-DELAY                        7.00E+0 calls took 2.15E-5;  6.6%
+ From CERTIFY-BOOK-FN                            1.00E+1 calls took 3.25E-4; ?%
+ Memoize table count/size                              8.20E+1/ 9.10E+1 = 90.1%
+ (Pons table count/size                                           1/62 =  1.6%)
+ (Number of pons sub tables                                                  1)
+ (Sum of pons sub table sizes                                               91)
+ (Number of ponses                                                          82))
+(SV::SVEXLIST-MASK-ALIST-MEMO
+ Hits/calls                                            1.00E+0/ 2.00E+0 = 50.0%
+ Time of all outermost calls                                            2.77E-4
+ Time per call                                                          1.38E-4
+ Heap bytes allocated                                            2.53E+4;  0.0%
+ Heap bytes allocated per call                                          1.26E+4
+ Time per missed call                                                   2.77E-4
+ To self/unprofiled functions                                    2.50E-4; 90.4%
+ To SV::SVEX-S4XEVAL                          1.34E+2 calls took 2.65E-5;  9.6%
+ From SV::SVEXLIST->A4VECS-FOR-VARLIST           1.00E+0 calls took 2.76E-4; ?%
+ From other functions                            1.00E+0 calls took 2.87E-7; ?%
+ Memoize table count/size                              1.00E+0/ 6.20E+1 =  1.6%)
+(SV::SVEX-REDUCE-CONSTS
+ Hits/calls                                            5.10E+1/ 2.33E+2 = 21.9%
+ Time of all outermost calls                                            2.69E-4
+ Time per call                                                          1.16E-6
+ Heap bytes allocated                                            9.79E+3;  0.0%
+ Heap bytes allocated per call                                            42.03
+ Time per missed call                                                   1.48E-6
+ To self/unprofiled functions                                    1.73E-4; 64.4%
+ To SV::SVEX-XEVAL                            8.20E+1 calls took 5.00E-5; 18.6%
+ To SV::SVEX-VARIABLE-FREE-P                  9.60E+1 calls took 4.42E-5; 16.4%
+ To other functions                           1.14E+2 calls took 1.58E-6;  0.6%
+ From CERTIFY-BOOK-FN                            1.35E+2 calls took 2.69E-4; ?%
+ Memoize table count/size                              4.40E+1/ 6.20E+1 = 71.0%)
+(SV::SVEX-NAMED->INDEXED
+ Hits/calls                                            6.00E+0/ 7.50E+1 =  8.0%
+ Number of calls to mht                                                       2
+ Time of all outermost calls                                            2.25E-4
+ Time per call                                                          3.01E-6
+ Heap bytes allocated                                            8.93E+3;  0.0%
+ Heap bytes allocated per call                                           119.04
+ Pons calls                                                           74;  0.1%
+ Time per missed call                                                   3.27E-6
+ From CERTIFY-BOOK-FN                            4.00E+0 calls took 2.25E-4; ?%
+ Memoize table count/size                              0.00E-1/ 6.20E+1 =  0.0%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(AIG-EXTRACT-ITERATED-ASSIGNS-ALIST
+ Hits/calls                                            8.00E+0/ 9.00E+0 = 88.9%
+ Time of all outermost calls                                            2.22E-4
+ Time per call                                                          2.46E-5
+ Heap bytes allocated                                            1.46E+4;  0.0%
+ Heap bytes allocated per call                                          1.62E+3
+ Pons calls                                                            5;  0.0%
+ Time per missed call                                                   2.22E-4
+ To self/unprofiled functions                                    1.62E-4; 73.3%
+ To AIG-EXTRACT-ASSIGNS                       2.00E+0 calls took 3.05E-5; 13.8%
+ To AIG-RESTRICT                              2.00E+0 calls took 2.87E-5; 12.9%
+ From PROVE                                      9.00E+0 calls took 2.22E-4; ?%
+ Memoize table count/size                              1.00E+0/ 6.20E+1 =  1.6%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(SV::SVEX-NORMALIZE-CONCATS-AUX
+ Hits/calls                                            8.70E+1/ 1.76E+2 = 49.4%
+ Time of all outermost calls                                            2.11E-4
+ Time per call                                                          1.20E-6
+ Heap bytes allocated                                            1.49E+4;  0.0%
+ Heap bytes allocated per call                                            84.91
+ Pons calls                                                          176;  0.2%
+ Time per missed call                                                   2.37E-6
+ From CERTIFY-BOOK-FN                            1.00E+1 calls took 2.11E-4; ?%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(SVL::4VEC-TO-SVEX
+ Hits/calls                                            0.00E-1/ 2.08E+2 =  0.0%
+ Time of all outermost calls                                            1.89E-4
+ Time per call                                                          9.10E-7
+ Heap bytes allocated                                            7.06E+3;  0.0%
+ Heap bytes allocated per call                                            33.92
+ From CERTIFY-BOOK-FN                            3.20E+1 calls took 1.89E-4; ?%)
+(SV::SVEX-VARS
+ Hits/calls                                            5.70E+1/ 1.00E+2 = 57.0%
+ Time of all outermost calls                                            1.89E-4
+ Time per call                                                          1.89E-6
+ Heap bytes allocated                                            4.02E+3;  0.0%
+ Heap bytes allocated per call                                            40.16
+ Time per missed call                                                   4.40E-6
+ From CERTIFY-BOOK-FN                            1.80E+1 calls took 1.89E-4; ?%
+ Memoize table count/size                              4.30E+1/ 6.20E+1 = 69.4%)
+(VL::VL-SCOPE-DEFINITION-ALIST-AUX
+ Hits/calls                                            4.70E+1/ 5.70E+1 = 82.5%
+ Number of calls to mht                                                       2
+ Time of all outermost calls                                            7.20E-5
+ Time per call                                                          1.26E-6
+ Heap bytes allocated                                            1.26E+4;  0.0%
+ Heap bytes allocated per call                                           220.63
+ Time per missed call                                                   7.20E-6
+ From CERTIFY-BOOK-FN                            3.70E+1 calls took 5.48E-5; ?%
+ From VL::VL-DESIGN-IMMDEPS                      2.00E+1 calls took 1.72E-5; ?%
+ Memoize table count/size                              0.00E-1/ 6.20E+1 =  0.0%)
+(SV::SVEXLIST-VARS-MEMO
+ Hits/calls                                            0.00E-1/ 1.00E+0 =  0.0%
+ Time of all outermost calls                                            7.05E-5
+ Time per call                                                          7.05E-5
+ Heap bytes allocated                                            8.50E+3;  0.0%
+ Heap bytes allocated per call                                          8.50E+3
+ From PROVE                                      1.00E+0 calls took 7.05E-5; ?%
+ Memoize table count/size                              1.00E+0/ 6.20E+1 =  1.6%)
+(SV::SVEX-ADDR-P
+ Hits/calls                                            6.00E+0/ 7.50E+1 =  8.0%
+ Time of all outermost calls                                            5.86E-5
+ Time per call                                                          7.82E-7
+ Heap bytes allocated                                            1.73E+3;  0.0%
+ Heap bytes allocated per call                                            23.04
+ Time per missed call                                                   8.50E-7
+ From CERTIFY-BOOK-FN                            4.00E+0 calls took 5.86E-5; ?%
+ Memoize table count/size                              3.10E+1/ 6.20E+1 = 50.0%)
+(SV::SVEX-ADD-DELAY
+ Hits/calls                                            3.00E+0/ 2.30E+1 = 13.0%
+ Time of all outermost calls                                            5.81E-5
+ Time per call                                                          2.53E-6
+ Heap bytes allocated                                            3.73E+3;  0.0%
+ Heap bytes allocated per call                                           162.09
+ Time per missed call                                                   2.91E-6
+ From CERTIFY-BOOK-FN                            2.00E+0 calls took 3.66E-5; ?%
+ From SV::SVEX-SUBST-FROM-SVEXARR                7.00E+0 calls took 2.15E-5; ?%
+ Memoize table count/size                              5.00E+0/ 6.20E+1 =  8.1%
+ (Pons table count/size                                           0/62 =  0.0%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           0))
+(SV::SVEX-XEVAL
+ Hits/calls                                            1.40E+1/ 1.12E+2 = 12.5%
+ Time of all outermost calls                                            5.00E-5
+ Time per call                                                          4.46E-7
+ Heap bytes allocated                                            2.50E+3;  0.0%
+ Heap bytes allocated per call                                            22.29
+ Time per missed call                                                   5.10E-7
+ From SV::SVEX-REDUCE-CONSTS                     8.20E+1 calls took 5.00E-5; ?%
+ Memoize table count/size                              1.00E+1/ 6.20E+1 = 16.1%)
+(SV::SVEX-COMPOSE-SVSTACK
+ Hits/calls                                            0.00E-1/ 2.30E+1 =  0.0%
+ Number of calls to mht                                                       2
+ Time of all outermost calls                                            4.99E-5
+ Time per call                                                          2.17E-6
+ Heap bytes allocated                                            5.76E+3;  0.0%
+ Heap bytes allocated per call                                           250.43
+ Pons calls                                                            8;  0.0%
+ From CERTIFY-BOOK-FN                            3.00E+0 calls took 4.99E-5; ?%
+ Memoize table count/size                              6.00E+0/ 6.20E+1 =  9.7%
+ (Pons table count/size                                           1/62 =  1.6%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           6))
+(SV::SVEX-VARIABLE-FREE-P
+ Hits/calls                                            1.40E+1/ 1.24E+2 = 11.3%
+ Time of all outermost calls                                            4.42E-5
+ Time per call                                                          3.56E-7
+ Heap bytes allocated                                            1.73E+3;  0.0%
+ Heap bytes allocated per call                                            13.94
+ Time per missed call                                                   4.02E-7
+ From SV::SVEX-REDUCE-CONSTS                     9.60E+1 calls took 4.42E-5; ?%
+ Memoize table count/size                              1.00E+1/ 6.20E+1 = 16.1%)
+(AIG-RESTRICT
+ Hits/calls                                            1.00E+0/ 6.10E+1 =  1.6%
+ Number of calls to mht                                                       2
+ Time of all outermost calls                                            4.01E-5
+ Time per call                                                          6.58E-7
+ Heap bytes allocated                                            5.50E+3;  0.0%
+ Heap bytes allocated per call                                            90.23
+ Pons calls                                                           11;  0.0%
+ Time per missed call                                                   6.69E-7
+ From AIG-EXTRACT-ITERATED-ASSIGNS-ALIST         2.00E+0 calls took 2.87E-5; ?%
+ From PROVE                                      2.70E+1 calls took 1.15E-5; ?%
+ Memoize table count/size                              5.00E+0/ 6.20E+1 =  8.1%
+ (Pons table count/size                                           1/62 =  1.6%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           5))
+(SV::SVEXLIST-VARIABLE-MASK-ALIST
+ Hits/calls                                            0.00E-1/ 1.00E+0 =  0.0%
+ Time of all outermost calls                                            3.76E-5
+ Time per call                                                          3.76E-5
+ Heap bytes allocated                                            4.42E+3;  0.0%
+ Heap bytes allocated per call                                          4.42E+3
+ To self/unprofiled functions                                    3.73E-5; 99.2%
+ To other functions                           1.00E+0 calls took 2.87E-7;  0.8%
+ From PROVE                                      1.00E+0 calls took 3.76E-5; ?%
+ Memoize table count/size                              1.00E+0/ 6.20E+1 =  1.6%)
+(VL::VL-SCOPE-PORTDECL-ALIST-AUX
+ Hits/calls                                            2.20E+1/ 2.40E+1 = 91.7%
+ Time of all outermost calls                                            3.35E-5
+ Time per call                                                          1.40E-6
+ Heap bytes allocated                                            5.47E+3;  0.0%
+ Heap bytes allocated per call                                              228
+ Time per missed call                                                   1.68E-5
+ From CERTIFY-BOOK-FN                            2.40E+1 calls took 3.35E-5; ?%)
+(VL::VL-DESIGN-TOPLEVEL
+ Hits/calls                                            0.00E-1/ 1.00E+0 =  0.0%
+ Time of all outermost calls                                            3.34E-5
+ Time per call                                                          3.34E-5
+ Heap bytes allocated                                            3.39E+3;  0.0%
+ Heap bytes allocated per call                                          3.39E+3
+ From CERTIFY-BOOK-FN                            1.00E+0 calls took 3.34E-5; ?%)
+(SV::3VALUED-SYNTAXP
+ Hits/calls                                            0.00E-1/ 1.49E+2 =  0.0%
+ Time of all outermost calls                                            3.22E-5
+ Time per call                                                          2.16E-7
+ From SV::SVEXLIST->A4VECS-FOR-VARLIST           1.12E+2 calls took 3.13E-5; ?%
+ From CERTIFY-BOOK-FN                            1.00E+0 calls took 9.05E-7; ?%)
+(DEPGRAPH::TRANSDEPS-DIRECT-FOR-NODE
+ Hits/calls                                            0.00E-1/ 6.00E+0 =  0.0%
+ Time of all outermost calls                                            3.15E-5
+ Time per call                                                          5.26E-6
+ Heap bytes allocated                                            3.65E+3;  0.0%
+ Heap bytes allocated per call                                              608
+ Pons calls                                                            6;  0.0%
+ From CERTIFY-BOOK-FN                            6.00E+0 calls took 3.15E-5; ?%
+ Memoize table count/size                              6.00E+0/ 6.20E+1 =  9.7%
+ (Pons table count/size                                           2/62 =  3.2%)
+ (Number of pons sub tables                                                  0)
+ (Sum of pons sub table sizes                                                0)
+ (Number of ponses                                                           6))
+(SV::SVEX-UNSET-NONBLOCKING
+ Hits/calls                                            0.00E-1/ 1.10E+1 =  0.0%
+ Time of all outermost calls                                            3.14E-5
+ Time per call                                                          2.86E-6
+ Heap bytes allocated                                            1.89E+3;  0.0%
+ Heap bytes allocated per call                                           171.64
+ From CERTIFY-BOOK-FN                            1.00E+0 calls took 3.14E-5; ?%)
+(AIG-EXTRACT-ASSIGNS
+ Hits/calls                                            0.00E-1/ 1.20E+1 =  0.0%
+ Time of all outermost calls                                            3.05E-5
+ Time per call                                                          2.54E-6
+ Heap bytes allocated                                            2.06E+3;  0.0%
+ Heap bytes allocated per call                                              172
+ From AIG-EXTRACT-ITERATED-ASSIGNS-ALIST         2.00E+0 calls took 3.05E-5; ?%)
+(SV::SVEX-EVAL
+ Hits/calls                                            0.00E-1/ 1.60E+1 =  0.0%
+ Time of all outermost calls                                            1.58E-6
+ Time per call                                                          9.88E-8
+ From SV::SVEX-REDUCE-CONSTS                     1.60E+1 calls took 1.58E-6; ?%)
+Exit code from ACL2 is 43
+-rw-------. 1 cjanecka students 226309 Apr 20 14:03 lab5test-a.cert
