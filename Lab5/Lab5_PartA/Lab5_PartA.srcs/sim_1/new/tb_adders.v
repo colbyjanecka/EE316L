@@ -145,6 +145,10 @@ Cin = 1'b0;
 
 #50;
 
+load = 1;
+
+#50;
+
 end
 
 always
