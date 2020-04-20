@@ -36,7 +36,7 @@ rca uut (
     .a(a),
     .b(b),
     .Cin(Cin),
-    .total_rca(total)
+    .total(total_rca)
 );
 
 cla cla0 (
@@ -45,7 +45,7 @@ cla cla0 (
     .a(a),
     .b(b),
     .Cin(Cin),
-    .total(total)
+    .total(total_cla)
 
     );
 
