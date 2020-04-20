@@ -45,6 +45,6 @@ module cla(
     assign Data[4] = Cout;
     assign Data[3:0] = C;
 
-    register_logic register(.clk(clk), .load(load), .Data(Data), .total(total));
+    loadreg reg(.clk(clk), .load(load), .Data(Data), .total(total));
 
 endmodule

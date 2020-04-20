@@ -27,7 +27,8 @@ reg load;
 reg[3:0] a;
 reg[3:0] b;
 reg Cin;
-wire[4:0] total;
+wire[4:0] total_rca;
+wire[4:0] total_cla;
 
 rca uut (
     .clk(clk),
@@ -35,8 +36,18 @@ rca uut (
     .a(a),
     .b(b),
     .Cin(Cin),
-    .total(total)
+    .total_rca(total)
 );
+
+cla cla0 (
+    .clk(clk),
+    .load(load),
+    .a(a),
+    .b(b),
+    .Cin(Cin),
+    .total(total)
+
+    );
 
 initial begin
 
