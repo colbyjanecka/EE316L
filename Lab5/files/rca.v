@@ -1,31 +1,31 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
+// Company: 
+// Engineer: 
+// 
 // Create Date: 04/17/2020 02:31:24 PM
-// Design Name:
+// Design Name: 
 // Module Name: rca
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-//
+// 
 //////////////////////////////////////////////////////////////////////////////////
 
 
 module rca(
 input clk, load,
  input [3:0] a, b,
- input Cin,
- output [4:0] total);
-
+ input Cin, 
+ output [4:0] total); 
+    
 wire s0, s1, s2, s3, o0, o1, o2, o3;
 reg[4:0] D;
 
@@ -38,4 +38,6 @@ always @(*) begin
     D = {o3, s3, s2, s1, s0};
 end
 
+loadreg c5 (.clk(clk), .load(load), .D(D), .Q(total)); 
+    
 endmodule
