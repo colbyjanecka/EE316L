@@ -35,10 +35,10 @@ module cla(
 
     assign Q = {Cout, S};
 
-    P = a ^ b
-    G = a&b
-    C = P ^ S
-    S = G + (P & G)
+    P = a ^ b;
+    G = a&b;
+    C = P ^ S;
+    S = G + (P & G);
 
 
     //assign Data = {Cout, S};
