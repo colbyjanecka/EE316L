@@ -43,6 +43,30 @@ initial begin
 clk = 0;
 load = 0;
 
+a = 4'b0000;
+b = 4'b0100;
+Cin = 1'b0;
+
+#50;
+
+load = 1;
+
+#50;
+
+load = 0;
+
+a = 4'b0000;
+b = 4'b0111;
+Cin = 1'b1;
+
+#50;
+
+load = 1;
+
+#50;
+
+load = 0;
+
 a = 4'b0001;
 b = 4'b0101;
 Cin = 1'b0;
