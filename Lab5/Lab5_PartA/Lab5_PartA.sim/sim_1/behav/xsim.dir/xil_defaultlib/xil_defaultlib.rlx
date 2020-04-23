@@ -3,9 +3,8 @@
 Jan 23 2017
 19:19:20
 /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
-/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sim_1/new/tb_datapath.v,1587616317,verilog,,,,tb_datapath,,,,,,,,
+/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sim_1/new/tb_adders.v,1587624567,verilog,,,,tb_adders,,,,,,,,
 /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/adder.v,1587153691,verilog,,,,adder,,,,,,,,
-/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/cla.v,1587600648,verilog,,,,cla,,,,,,,,
-/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/datapath.v,1587599663,verilog,,,,datapath,,,,,,,,
-/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/loadreg.v,1587601046,verilog,,,,loadreg,,,,,,,,
-/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/rca.v,1587600694,verilog,,,,rca,,,,,,,,
+/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/cla.v,1587618669,verilog,,,,cla,,,,,,,,
+/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/loadreg.v,1587625472,verilog,,,,loadreg,,,,,,,,
+/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/rca.v,1587618669,verilog,,,,rca,,,,,,,,

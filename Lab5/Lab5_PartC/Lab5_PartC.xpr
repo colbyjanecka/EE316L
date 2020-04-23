@@ -102,14 +102,6 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constrs_1/new/adder_constrs.xdc">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc"/>
-          <Attr Name="ImportTime" Val="1587406024"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/constrs_1/new/datapath_constrs.xdc">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../project_1aLab5_PartC/project_1aLab5_PartC.srcs/constrs_1/new/datapath_constrs.xdc"/>
@@ -128,16 +120,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_PartA/Lab5_PartA.srcs/sim_1/new/tb_datapath.v"/>
           <Attr Name="ImportTime" Val="1587616317"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/tb_adders.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_PartA/Lab5_PartA.srcs/sim_1/new/tb_adders.v"/>
-          <Attr Name="ImportTime" Val="1587411481"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

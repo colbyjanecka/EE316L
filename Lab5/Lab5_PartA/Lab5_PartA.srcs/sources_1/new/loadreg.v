@@ -6,7 +6,7 @@ module loadreg(
     output reg [4:0] Q);
     
 initial Q = 0;
-always @(posedge clk) begin
-    if(load) Q <= D;
+always @(load) begin
+    Q <= D;
 end
 endmodule

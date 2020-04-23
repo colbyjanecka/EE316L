@@ -9,5 +9,5 @@ then
 exit $RETVAL
 fi
 }
-echo "xvlog -m64 --relax -prj tb_datapath_vlog.prj"
-ExecStep $xv_path/bin/xvlog -m64 --relax -prj tb_datapath_vlog.prj 2>&1 | tee compile.log
+echo "xvlog -m64 --relax -prj tb_adders_vlog.prj"
+ExecStep $xv_path/bin/xvlog -m64 --relax -prj tb_adders_vlog.prj 2>&1 | tee compile.log
