@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Apr 23 03:45:45 2020
+# Process ID: 31056
+# Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.runs/impl_6
+# Command line: vivado -log rca.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rca.tcl -notrace
+# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.runs/impl_6/rca.vdi
+# Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.runs/impl_6/vivado.jou
+#-----------------------------------------------------------
+source rca.tcl -notrace

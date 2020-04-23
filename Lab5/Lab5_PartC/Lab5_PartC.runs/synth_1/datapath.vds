@@ -2,12 +2,12 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Apr 22 23:50:49 2020
-# Process ID: 18255
-# Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.runs/synth_1
+# Start of session at: Thu Apr 23 03:40:12 2020
+# Process ID: 16176
+# Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.runs/synth_1
 # Command line: vivado -log datapath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath.tcl
-# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.runs/synth_1/datapath.vds
-# Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.runs/synth_1/vivado.jou
+# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.runs/synth_1/datapath.vds
+# Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source datapath.tcl -notrace
 Command: synth_design -top datapath -part xc7a35tcpg236-1
@@ -15,26 +15,26 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18737 
+INFO: Helper process launched with PID 16566 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1144.445 ; gain = 125.078 ; free physical = 49946 ; free virtual = 80194
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1145.441 ; gain = 126.078 ; free physical = 50097 ; free virtual = 80348
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'datapath' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/datapath.v:23]
-INFO: [Synth 8-638] synthesizing module 'rca' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/rca.v:23]
-INFO: [Synth 8-638] synthesizing module 'adder' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/adder.v:3]
-INFO: [Synth 8-256] done synthesizing module 'adder' (1#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/adder.v:3]
-INFO: [Synth 8-256] done synthesizing module 'rca' (2#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/rca.v:23]
-INFO: [Synth 8-638] synthesizing module 'cla' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/cla.v:23]
-INFO: [Synth 8-256] done synthesizing module 'cla' (3#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/cla.v:23]
-INFO: [Synth 8-638] synthesizing module 'loadreg' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/loadreg.v:3]
-INFO: [Synth 8-256] done synthesizing module 'loadreg' (4#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/loadreg.v:3]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (5#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-638] synthesizing module 'rca' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/rca.v:23]
+INFO: [Synth 8-638] synthesizing module 'adder' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-256] done synthesizing module 'adder' (1#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rca' (2#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/rca.v:23]
+INFO: [Synth 8-638] synthesizing module 'cla' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/cla.v:23]
+INFO: [Synth 8-256] done synthesizing module 'cla' (3#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/cla.v:23]
+INFO: [Synth 8-638] synthesizing module 'loadreg' [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/loadreg.v:3]
+INFO: [Synth 8-256] done synthesizing module 'loadreg' (4#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/loadreg.v:3]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (5#1) [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/sources_1/new/datapath.v:23]
 WARNING: [Synth 8-3331] design cla has unconnected port clk
 WARNING: [Synth 8-3331] design cla has unconnected port load
 WARNING: [Synth 8-3331] design rca has unconnected port clk
 WARNING: [Synth 8-3331] design rca has unconnected port load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1185.930 ; gain = 166.562 ; free physical = 49909 ; free virtual = 80158
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1185.926 ; gain = 166.562 ; free physical = 50058 ; free virtual = 80309
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -44,119 +44,41 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1185.930 ; gain = 166.562 ; free physical = 49909 ; free virtual = 80158
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1185.926 ; gain = 166.562 ; free physical = 50055 ; free virtual = 80306
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc]
-WARNING: [Vivado 12-584] No ports matched 'a[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:7]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:7]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:8]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:9]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:9]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:10]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:11]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:11]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:12]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:12]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:13]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:16]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:19]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'b[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:29]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[0]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:30]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:31]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[1]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:32]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[2]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:35]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[3]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:36]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[4]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:37]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'total[4]'. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/datapath_propImpl.xdc].
+Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/constrs_1/new/datapath_constrs.xdc]
+Finished Parsing XDC File [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/constrs_1/new/datapath_constrs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.srcs/constrs_1/new/datapath_constrs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/datapath_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/datapath_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1534.742 ; gain = 0.000 ; free physical = 49732 ; free virtual = 79981
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1534.480 ; gain = 0.000 ; free physical = 49803 ; free virtual = 80055
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49731 ; free virtual = 79980
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49801 ; free virtual = 80052
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49731 ; free virtual = 79980
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49801 ; free virtual = 80052
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49728 ; free virtual = 79977
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49801 ; free virtual = 80052
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49719 ; free virtual = 79968
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49798 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -221,7 +143,7 @@ INFO: [Synth 8-3886] merging instance 'r2/Q_reg[14]' (FDE) to 'r2/Q_reg[15]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r2/Q_reg[15] )
 WARNING: [Synth 8-3332] Sequential element (r2/Q_reg[15]) is unused and will be removed from module datapath.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49699 ; free virtual = 79948
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49798 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -236,10 +158,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49679 ; free virtual = 79927
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49678 ; free virtual = 79927
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,7 +173,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49669 ; free virtual = 79918
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -275,7 +197,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49664 ; free virtual = 79913
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -288,7 +210,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49664 ; free virtual = 79913
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -300,25 +222,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49663 ; free virtual = 79912
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49663 ; free virtual = 79912
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49661 ; free virtual = 79910
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49661 ; free virtual = 79909
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -353,11 +275,11 @@ Report Instance Areas:
 |2     |  r2     |loadreg |    23|
 +------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49660 ; free virtual = 79909
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49797 ; free virtual = 80049
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.742 ; gain = 86.477 ; free physical = 49661 ; free virtual = 79910
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.742 ; gain = 515.375 ; free physical = 49662 ; free virtual = 79911
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1534.480 ; gain = 86.477 ; free physical = 49797 ; free virtual = 80049
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1534.480 ; gain = 515.117 ; free physical = 49799 ; free virtual = 80050
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -367,9 +289,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 31 Warnings, 26 Critical Warnings and 0 Errors encountered.
+33 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1534.746 ; gain = 447.875 ; free physical = 49664 ; free virtual = 79913
-INFO: [Common 17-1381] The checkpoint '/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartA/Lab5_PartA.runs/synth_1/datapath.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1564.762 ; gain = 0.000 ; free physical = 49662 ; free virtual = 79911
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 23:51:28 2020...
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1534.484 ; gain = 447.617 ; free physical = 49812 ; free virtual = 80064
+INFO: [Common 17-1381] The checkpoint '/home/ecelrc/students/cjanecka/EE316L/Lab5/Lab5_PartC/Lab5_PartC.runs/synth_1/datapath.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1564.500 ; gain = 0.000 ; free physical = 49808 ; free virtual = 80059
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 03:40:51 2020...

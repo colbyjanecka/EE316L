@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1587617448">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1587631211">
   <File Type="VDS-TIMING-PB" Name="datapath_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="datapath_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="datapath.dcp"/>
@@ -62,10 +62,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/adder_constrs.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/datapath_constrs.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab5_PartA/Lab5_PartA.srcs/constrs_1/new/adder_constrs.xdc"/>
-        <Attr Name="ImportTime" Val="1587406024"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1aLab5_PartC/project_1aLab5_PartC.srcs/constrs_1/new/datapath_constrs.xdc"/>
+        <Attr Name="ImportTime" Val="1587617707"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
