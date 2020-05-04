@@ -25,12 +25,12 @@ module cla(
     input [3:0] a, b,
     input Cin,
     output [4:0] total);
-    
+
     wire [3:0] G, P, S;
     wire [4:0] C;
     wire Cout;
     wire [4:0] D;
-    
+
     //CLA Dataflow Model
     assign P[0] = a[0] ^ b[0];
     assign P[1] = a[1] ^ b[1];
@@ -46,14 +46,12 @@ module cla(
     assign C[3] = (P[2]&P[1]&P[0]&C[0]) | (P[2]&P[1]&G[0]) | (P[2]&G[1]) | G[2];
     assign C[4] = (P[3]&P[2]&P[1]&P[0]&C[0]) | (P[3]&P[2]&P[1]&G[0]) | (P[3]&P[2]&G[1]) | (P[3]&G[2]) | G[3];
     assign Cout = C[4];
+
+    assign total[0] = P[0] ^ C[0];
+    assign total[1] = P[1] ^ C[1];
+    assign total[2] = P[2] ^ C[2];
+    assign total[3] = P[3] ^ C[3];
+    assign total[4] = C[4];
     
-    assign S[0] = P[0] ^ C[0];
-    assign S[1] = P[1] ^ C[1];
-    assign S[2] = P[2] ^ C[2];
-    assign S[3] = P[3] ^ C[3];
-    
-    assign D = {Cout, S};
-    
-    loadreg r0(.clk(clk), .load(load), .D(D), .Q(total));
 
 endmodule

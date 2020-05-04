@@ -2,8 +2,8 @@
 
 module loadreg(
     input clk, load,
-    input [4:0] D,
-    output reg [4:0] Q);
+    input [15:0] D,
+    output reg [15:0] Q);
     
 initial Q = 0;
 always @(posedge clk) begin
