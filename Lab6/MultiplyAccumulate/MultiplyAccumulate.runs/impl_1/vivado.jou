@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon May  4 20:28:20 2020
+# Process ID: 5792
+# Current directory: /home/ecelrc/students/cjanecka/EE316L/Lab6/MultiplyAccumulate/MultiplyAccumulate.runs/impl_1
+# Command line: vivado -log mac.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mac.tcl -notrace
+# Log file: /home/ecelrc/students/cjanecka/EE316L/Lab6/MultiplyAccumulate/MultiplyAccumulate.runs/impl_1/mac.vdi
+# Journal file: /home/ecelrc/students/cjanecka/EE316L/Lab6/MultiplyAccumulate/MultiplyAccumulate.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source mac.tcl -notrace
