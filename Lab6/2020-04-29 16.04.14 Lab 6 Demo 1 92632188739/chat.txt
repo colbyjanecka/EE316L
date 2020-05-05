@@ -1,0 +1,5 @@
+16:12:49	 From  Vineet Nippani : are there any mealy conditions in the HLSM?
+16:17:17	 From  Vineet Nippani   to   Jerry Yang(Privately) : how do we split the HLSM / shift multiply process between the part B and part C modules? do we only calculate and output partial products in part B or do we do more? Also do we need to use our old adder module from lab 5?
+16:20:23	 From  Satya Boddu   to   Jerry Yang(Privately) : Do you want the switch inputs also in decimal or hex since it’s sw[7:4] and sw[3:0] all on one wave?
+16:23:33	 From  Vineet Nippani   to   Jerry Yang(Privately) : do we need to use our old full adder module for the adding part?
+16:28:06	 From  Vineet Nippani   to   Jerry Yang(Privately) : sorry for asking so many times, im a bit confused, but just to be sure the full product is all calculated in part B?
